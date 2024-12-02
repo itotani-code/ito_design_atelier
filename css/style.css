@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+  /*デフォルトの文字色、font-familyを予め当てておく*/
+  color: #4e3f36;
+  font-family: "Hina Mincho";
+}
+
+a {
+  /*下線を消す*/
+  text-decoration: none;
+  /*色を消す*/
+  color: inherit;
+}
+
+ul {
+  /*左の「・」を消す*/
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+  border: none;
+}
+
+/* ここまでリセットcss */
+
+/* ナビゲーションメニューを横に */
+.pc_nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    
+  }
+
+  /* キャッチコピー */
+  .catchcopy {
+    font-size: 40px;
+    line-height: 1.87;
+  }
+  
+  /* 糸だけ色を変える */
+  .thread_color {
+    font-size: 60px;
+    color:#c33f4e
+  }
+
+  /* こだわり部分 */
+  .commitment {
+    font-size: 18px;
+    text-align: center;
+    line-height: 1.87;
+  }
+
+  /* 部分的に色を変える */
+  .commitment_color {
+    font-size: 22px;
+    color:#c33f4e
+  }
+
+  /* ロゴのページへ */
+  .logo_mind_btn {
+    font-size: 16px;
+  }
+
+  /* about部分の基本フォントサイズ */
+  .about {
+    font-size: 16px;
+  }
+
+  /* 名前のフォントサイズ */
+  .about_name {
+    font-size: 25px;
+  }
+
+  /* 糸だけ色を変える */
+  .about_color {
+    color:#c33f4e;
+  }
+
+  /* フリガナはサイズを小さく */
+  .about_name_size {
+    font-size: 14px;
+  }
+
+  /* 説明文のラインハイト */
+  .about_text {
+    line-height: 1.68;
+  }
+
+  /* aboutのページへ */
+  .about_btn {
+    font-size: 16px;
+  }
