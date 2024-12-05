@@ -17,10 +17,11 @@ ul,
 li {
   margin: 0;
   padding: 0;
-  line-height: 1;
+  
   /*デフォルトの文字色、font-familyを予め当てておく*/
   color: #4e3f36;
-  font-family: "Hina Mincho";
+  font-family: "Hina Mincho", serif;
+
 }
 
 a {
@@ -41,20 +42,49 @@ img {
   border: none;
 }
 
+body {
+    max-width: 1366px;
+    background-color: #fcf8e7;
+}
+
 /* ここまでリセットcss */
+
+.header_logo {
+    padding: 10px 0 0 70px;
+}
+/* ナビゲーションメニューを横に */
+.header_wrap {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* あしらい固定 */
+.commitment_img {
+    width: 68%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
 /* ナビゲーションメニューを横に */
 .pc_nav ul {
     display: flex;
+    justify-content: right;
     list-style: none;
     font-size: 16px;
-    
+  }
+
+  .pc_nav li {
+    padding: 95px 50px 0px 50px;
   }
 
   /* キャッチコピー */
   .catchcopy {
     font-size: 40px;
     line-height: 1.87;
+    padding: 270px 0 0 375px;
+    font-weight: normal;
   }
   
   /* 糸だけ色を変える */
@@ -68,7 +98,10 @@ img {
     font-size: 18px;
     text-align: center;
     line-height: 1.87;
+    padding: 426px 0 0;
   }
+
+  
 
   /* 部分的に色を変える */
   .commitment_color {
@@ -79,34 +112,223 @@ img {
   /* ロゴのページへ */
   .logo_mind_btn {
     font-size: 16px;
+    padding: 130px  0 0 1000px;
+  }
+
+  .logo_thought {
+    width: 70%;
+
+    padding: 0 30px 0 0;
+    /* ↑効かない、、、 */
   }
 
   /* about部分の基本フォントサイズ */
   .about {
     font-size: 16px;
+    padding: 160px 0 0 255px;
   }
 
-  /* 名前のフォントサイズ */
+  .about_wrap {
+    display: flex;
+    margin: 225px 0 0 0;
+  }
+
   .about_name {
     font-size: 25px;
+    padding: 15px 0 40px 0;
   }
-
-  /* 糸だけ色を変える */
   .about_color {
     color:#c33f4e;
   }
-
-  /* フリガナはサイズを小さく */
   .about_name_size {
-    font-size: 14px;
-  }
-
-  /* 説明文のラインハイト */
-  .about_text {
-    line-height: 1.68;
-  }
-
-  /* aboutのページへ */
-  .about_btn {
     font-size: 16px;
   }
+
+  .about_img {
+    padding: 0 0 0 100px;
+  }
+  .about_more {
+    display: block;
+    padding: 70px 0 0 230px;
+    position: relative;
+  }
+
+  .about_btn {
+    display: block;
+    width: 10%;
+    padding: 0 0 0 440px;
+    position: absolute;
+    top: 2200px;
+    left: 0px;
+    /* 一旦これで応急処置して他を進める */
+  }
+
+  .support_h3{
+    font-size: 30px;
+    font-weight: normal;
+    padding: 295px 0 120px 0;
+    text-align: center;
+  }
+  .support_h3_color {
+    color: #c33f4e;
+  }
+
+
+
+.support_box {
+    display: block;
+    display: flex;
+    padding: 0 40px 0 40px;
+}
+
+.support_icon {
+    width: 50px;
+    padding: 0 35px 0 0;
+}
+
+.adjustment_tool_name {
+    font-size: 14px;
+    padding: 0 0 60px 0;
+}
+
+.tool_name_wrap {
+    width: 300px;
+    padding: 0 0 0 0px;
+}
+.tool_name {
+    font-size: 30px;
+    font-weight: normal;
+    border-bottom: 1px solid #888888;
+}
+
+.support_text {
+    width: 300px;
+    padding: 30px 0 50px 0;
+    line-height: 1.56;
+}
+
+.support_king {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 183px 130px 183px;
+
+}
+
+.works_wrap {
+    
+}
+.works_img {
+    position: relative;
+}
+
+.works_img_position {
+    position: absolute;
+    top: -900px;
+    left: 0px;
+
+}
+
+.pc_mock_01 {
+    width: 580px;
+    display: block;
+    margin: 0 auto;
+    padding: 430px 0 0 490px;
+}
+
+.works_text {
+    padding: 60px 0 0 130px;
+}
+
+.works_more {
+    padding: 70px 0 5px 350px;
+}
+
+.ida_works_more_btn {
+    width: 145px;
+    padding: 0 0 0 300px;
+}
+
+
+
+.contact_text {
+    text-align: center;
+    line-height: 1.87;
+    padding: 310px 0 60px 0;
+
+    /* カンプとズレ */
+}
+
+.contact_box {
+    background-color: #f3e6d8;
+    margin: auto;
+    width: 650px;
+    height: 50px;
+    border-radius: 8px; 
+}
+
+.contact_box_text {
+    background-color: #f3e6d8;
+    margin: auto;
+    width: 650px;
+    height: 300px;
+    border-radius: 8px; 
+}
+
+.contact_wrap {
+    margin: 45px 0 45px 0;
+}
+
+.contact {
+    position: relative;
+}
+.contact_img {
+    width: 255px;
+    height: 795px;
+    position: absolute;
+    top: 10;
+    right: 0;
+}
+
+.conrtact_name {
+    padding: 0 0 15px 370px;
+}
+
+.contact_btn {
+    width: 203px;
+}
+
+.contact_btn {
+    padding: 48px 0 300px 0;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.contact_btn_text {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    color: white;
+}
+
+.hooter {
+    width: 100%;
+    height: 100px;
+    background-color: #c33f4e;
+}
+
+.hooter_text {
+    text-align: center;
+    padding: 40px 0 0 0;
+    color: #fff;
+}
+
+.top_btn_box {
+    width: 150px;
+    padding: 0 0 40px 0;
+    margin-left: auto;
+}
+
+.top_btn_padding {
+    padding: 8px;
+}
