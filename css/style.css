@@ -53,12 +53,14 @@ body {
 /* ここまでリセットcss */
 
 .header_logo {
+    width: 203px;
     padding: 10px 0 0 70px;
 }
-/* ナビゲーションメニューを横に */
+
 .header_wrap {
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     position: relative;
 }
 
@@ -70,23 +72,27 @@ body {
     left: 0;
   }
 
-/* ナビゲーションメニューを横に */
-.pc_nav ul {
-    display: flex;
-    justify-content: right;
-    list-style: none;
-    font-size: 16px;
+  .pc_nav {
+    padding: 0 0 25px 0;
   }
 
-  .pc_nav li {
-    padding: 95px 50px 0px 50px;
+
+.pc_nav ul {
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    gap: 50px;
+  }
+
+  li:last-child {
+    padding: 0 70px 0 0;
   }
 
   /* キャッチコピー */
   .catchcopy {
     font-size: 40px;
     line-height: 1.87;
-    padding: 270px 0 0 375px;
+    margin: 270px 0 0 375px;
     font-weight: normal;
   }
   
@@ -101,7 +107,7 @@ body {
     font-size: 18px;
     text-align: center;
     line-height: 1.87;
-    padding: 426px 0 0;
+    margin: 426px 0 0;
   }
 
   
@@ -115,23 +121,24 @@ body {
   /* ロゴのページへ */
   .logo_mind_btn {
     font-size: 16px;
-    /* padding: 130px  0 0 1000px; */
+    padding: 130px 0px 0 0px;
   }
 
-  .logo_mind_btn > a {
+  .logo > a {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    margin: 135px 19% 0 0;
   }
 
   .logo_thought {
     width: 288px;
   }
 
-  /* about部分の基本フォントサイズ */
   .about {
     font-size: 16px;
     padding: 160px 0 0 255px;
+    position: relative;
   }
 
   .about_wrap {
@@ -151,28 +158,43 @@ body {
   }
 
   .about_img {
-    padding: 0 0 0 100px;
+    position: absolute;
+    top: 0;
+    left: 660px;
   }
+
+  .about_more_btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 65px 0 0 165px;
+  }
+
   .about_more {
-    display: block;
-    padding: 70px 0 0 230px;
-    position: relative;
+    width: 144px;
   }
+
 
   .about_btn {
     display: block;
     width: 10%;
-    padding: 0 0 0 440px;
+    padding:0 0 0 435px;
     position: absolute;
     top: 2200px;
     left: 0px;
     /* 一旦これで応急処置して他を進める */
   }
 
+  .about_thread {
+    width: 100px;
+    
+  }
+  
+
   .support_h3{
     font-size: 30px;
     font-weight: normal;
-    padding: 295px 0 120px 0;
+    margin: 295px 0 120px 0;
     text-align: center;
   }
   .support_h3_color {
@@ -220,6 +242,8 @@ body {
 
 }
 
+.support_box_last {}
+
 .works_wrap {
     position: relative;
 }
@@ -240,21 +264,27 @@ body {
     /* margin: 0 auto; */
     /* padding: 430px 0 0 490px; */
     margin-left: auto;
-    padding: 290px 8% 0 0;
+    padding: 290px 21% 0 0;
     
 }
 
 .works_text {
-    padding: 60px 0 0 130px;
+    padding: 60px 0 0 0px;
+    font-size: 25px;
+    text-align: center;
 }
 
 .works_more {
-    padding: 70px 0 5px 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0 5px 320px;
 }
 
 .ida_works_more_btn {
     width: 145px;
-    padding: 0 0 0 300px;
+    display: flex;
+    
 }
 
 
@@ -287,7 +317,7 @@ body {
     margin: 45px 0 45px 0;
 }
 
-.contact {
+.contact_guide {
     position: relative;
 }
 .contact_img {
