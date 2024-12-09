@@ -129,23 +129,39 @@ body {
     flex-direction: column;
     align-items: flex-end;
     margin: 135px 19% 0 0;
+    gap: 10px;
   }
+
+  /* カンプみて調節 */
 
   .logo_thought {
     width: 288px;
   }
 
+  .logo_text {
+    padding-right: 20px;
+  }
+
   .about {
     font-size: 16px;
-    padding: 160px 0 0 255px;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    gap: 80px;
   }
 
   .about_wrap {
     display: flex;
     margin: 225px 0 0 0;
-  }
+    position: relative;
+}
 
+.about_thread {
+  width: 300px;
+  position: absolute;
+  top: -80px;
+  /* カンプみて調節 */
+  right: 0;
+}
   .about_name {
     font-size: 25px;
     padding: 15px 0 40px 0;
@@ -157,11 +173,7 @@ body {
     font-size: 16px;
   }
 
-  .about_img {
-    position: absolute;
-    top: 0;
-    left: 660px;
-  }
+  
 
   .about_more_btn {
     display: flex;
@@ -185,16 +197,12 @@ body {
     /* 一旦これで応急処置して他を進める */
   }
 
-  .about_thread {
-    width: 100px;
-    
-  }
   
 
   .support_h3{
     font-size: 30px;
     font-weight: normal;
-    margin: 295px 0 120px 0;
+    margin: 350px 0 120px 0;
     text-align: center;
   }
   .support_h3_color {
@@ -206,12 +214,12 @@ body {
 .support_box {
     display: block;
     display: flex;
-    padding: 0 40px 0 40px;
+    justify-content: center;
+    gap: 35px;
 }
 
 .support_icon {
     width: 50px;
-    padding: 0 35px 0 0;
 }
 
 .adjustment_tool_name {
@@ -220,7 +228,7 @@ body {
 }
 
 .tool_name_wrap {
-    width: 300px;
+    /* width: 300px; */
     padding: 0 0 0 0px;
 }
 .tool_name {
@@ -230,17 +238,29 @@ body {
 }
 
 .support_text {
-    width: 300px;
+    /* width: 300px; */
     padding: 30px 0 50px 0;
     line-height: 1.56;
 }
 
 .support_king {
+    max-width:  1000px;
     display: flex;
     justify-content: space-between;
-    margin: 0 183px 130px 183px;
-
+    margin: 0 auto;
+    margin-bottom: 130px;
 }
+
+.support_wrap {
+    width: 30%;
+}
+
+.support_box > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 .support_box_last {}
 
