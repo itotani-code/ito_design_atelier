@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_1" data-name="レイヤー_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31 31">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        opacity: .2;
+        stroke: #c33f4e;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+      }
+    </style>
+  </defs>
+  <polyline class="cls-1" points="23 15.5 8 15.5 12.95 10.55 8 15.5 12.95 20.45"/>
+  <circle class="cls-1" cx="15.5" cy="15.5" r="15"/>
+</svg>
