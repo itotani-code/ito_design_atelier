@@ -89,6 +89,10 @@ body {
     padding: 0 70px 0 0;
   }
 
+  .hamburger {
+    display: none;
+  }
+
   /* キャッチコピー */
   .catchcopy {
     font-size: 40px;
@@ -231,7 +235,7 @@ body {
 }
 
 .support_icon {
-    width: 50px;
+    height: 50px;
 }
 
 .adjustment_tool_name {
@@ -350,6 +354,10 @@ body {
     margin: 45px 0 45px 0;
 }
 
+.contact_wrap_last {
+    margin: 45px 0 90px 0;
+}
+
 .contact_guide {
     position: relative;
 }
@@ -377,9 +385,10 @@ body {
 
 .contact_btn_text {
     position: absolute;
-    top: 0px;
-    left: 0px;
+    top: 50%;
+    left: 50%;
     color: white;
+    transform: translate(-50%,-50%);
 }
 
 .hooter {
@@ -513,7 +522,7 @@ z-index: 100;
 }
 
 .partition {
-    width: 1366px;
+    width: 100%;
     position: absolute;
     top: -200px;
     left: 0;
@@ -526,17 +535,12 @@ z-index: 100;
 
 .lower_contact_btn {
     width: 200px;
-    padding: 48px 0 210px 0;
-    margin: 0 auto;
+    margin: 48px 0 210px 0;
+    margin: 48px auto 210px;
     position: relative;
 }
 
-.contact_btn_text {
-    position: absolute;
-    top: 65px;
-    left: 25px;
-    color: white;
-}
+
 
 .return_wrap {
     margin-bottom: 40px;
@@ -693,7 +697,8 @@ z-index: 100;
     display: flex;
     gap: 100px;
     border-left: 10px solid #c33f4e;
-    padding-bottom: 65px;
+    margin-bottom: 65px;
+    padding: 5px 0 5px 15px;
 }
 
 .border_line {
@@ -722,3 +727,40 @@ z-index: 100;
     justify-content: center;
     gap: 170px;
 }
+
+.look_lp {
+    margin-left: 100px;
+    width: 400px;
+    height: 50px;
+    border: dashed 2px #c33f4e;
+    border-radius: 14px;
+}
+
+.look_lp_btn {
+    text-align: center;
+}
+
+/* ここからレスポンシブ */
+
+/* @media screen and (max-width: 1180px) {
+    .pc_nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    #btn01.active span:nth-of-type(1) {
+        -webkit-transform: translateY(20px) rotate(-45deg);
+        transform: translateY(20px) rotate(-45deg);
+      }
+      #btn01.active span:nth-of-type(2) {
+        opacity: 0;
+      }
+      #btn01.active span:nth-of-type(3) {
+        -webkit-transform: translateY(-20px) rotate(45deg);
+        transform: translateY(-20px) rotate(45deg);
+      }
+
+} */
