@@ -115,6 +115,13 @@ body {
     margin: 426px 0 0;
   }
 
+  .sp_commitment_img {
+    display: none;
+  }
+
+  .sp_commitment_br {
+    display: none;
+  }
   
 
   /* 部分的に色を変える */
@@ -173,6 +180,11 @@ body {
   /* カンプみて調節 */
   right: 0;
 }
+
+  .sp_about_thread {
+    display: none;
+  }
+
   .about_name {
     font-size: 25px;
     padding: 5px 0 40px 0;
@@ -200,6 +212,10 @@ body {
     width: 144px;
   }
 
+  .sp_about_wrap {
+    display: none;
+  }
+
 
 
 
@@ -213,6 +229,9 @@ body {
     /* 一旦これで応急処置して他を進める */
   }
 
+  .sp_support {
+    display: none;
+  }
   
 
   .support_h3{
@@ -742,25 +761,150 @@ z-index: 100;
 
 /* ここからレスポンシブ */
 
-/* @media screen and (max-width: 1180px) {
+@media screen and (max-width: 1180px) {
     .pc_nav {
         display: none;
     }
+}
 
-    .hamburger {
+
+@media screen and (max-width: 375px) {
+
+    .catchcopy {
+        max-width: 375px;
+        writing-mode: vertical-rl;
+        margin:  0 auto;
+        font-size: 30px;
+    }
+
+    .thread_color {
+        font-size: 40px;
+    }
+
+    .commitment_img {
+        display: none;
+    }
+
+    
+    .catchcopy {
+        position: relative;
+        padding: 35px 0 0 82px
+    }
+    
+    /* あしらいったん消す */
+
+    /* .sp_commitment_img {
+        display: block;
+        width: 283px;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+    } */
+    .commitment {
+        width: 88%;
+        margin-top: 85px;
+        font-size: 16px;
+        text-align: start;
+        padding-left: 30px;
+    }
+
+    .commitment_color {
+        font-size: 16px;
+    }
+
+    .sp_commitment_br {
         display: block;
     }
 
-    #btn01.active span:nth-of-type(1) {
-        -webkit-transform: translateY(20px) rotate(-45deg);
-        transform: translateY(20px) rotate(-45deg);
-      }
-      #btn01.active span:nth-of-type(2) {
-        opacity: 0;
-      }
-      #btn01.active span:nth-of-type(3) {
-        -webkit-transform: translateY(-20px) rotate(45deg);
-        transform: translateY(-20px) rotate(45deg);
-      }
+    .pc_commitment_br {
+        display: none;
+    }
 
-} */
+    #logo_mind {
+        margin: 0;
+    }
+
+    .logo_text {
+        padding-right: 0;
+    }
+
+    .logo_thought {
+        width: 215px;
+    }
+
+   .about_wrap {
+        display: none;
+   }
+
+   /* 表示されない・・・ */
+   .sp_about_thread { 
+        max-width: 375px;
+        width: 100%;
+   }
+
+   .sp_about {
+    max-width: 315px;
+    margin: 0 auto;
+   }
+
+   .sp_about_wrap {
+    display: block;
+    margin: 35px 0 30px 0;
+    display: flex;
+    justify-content: space-between;
+   }
+
+   .sp_about_text_wrap {
+    padding-top: 130px;
+   }
+
+   .sp_about_name {
+    font-size: 18px;
+   }
+
+   .sp_about_name_color {
+    color: #c33f4e;
+   }
+
+   .sp_about_name_size {
+    font-size: 10px;
+   }
+
+   .ida_sp_about {
+    width: 150px;
+   }
+
+   
+
+   .sp_about_btn {
+    padding: 30px 0 130px 0;
+    text-align: end;
+
+   }
+
+   .sp_about_more {
+    width: 123px;
+   }
+
+   .support {
+    display: none;
+   }
+
+   .sp_support {
+    display: block;
+   }
+
+   .sp_support_h3 {
+    text-align: center;
+   }
+
+   .sp_tool_name {
+    text-align: center;
+    padding: 70px 0 20px 0;
+   }
+}
+
+
+
+
+
