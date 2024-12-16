@@ -343,6 +343,10 @@ body {
     
 }
 
+.sp_works {
+    display: none;
+}
+
 
 
 .contact_text {
@@ -408,6 +412,10 @@ body {
     left: 50%;
     color: white;
     transform: translate(-50%,-50%);
+}
+
+.sp_contact {
+    display: none;
 }
 
 .hooter {
@@ -557,6 +565,10 @@ z-index: 100;
     margin: 48px 0 210px 0;
     margin: 48px auto 210px;
     position: relative;
+}
+
+.sp_footer {
+    display: none;
 }
 
 
@@ -892,6 +904,8 @@ z-index: 100;
 
    .sp_support {
     display: block;
+    max-width: 315px;
+    margin: 0 auto;
    }
 
    .sp_support_h3 {
@@ -902,9 +916,121 @@ z-index: 100;
     text-align: center;
     padding: 70px 0 20px 0;
    }
+
+   .sp_support_box {
+    display: flex;
+    justify-content: center;
+    gap: 35px;
+   }
+
+   .sp_support_border {
+    border-bottom:1px solid #888888;
+    padding-top: 20px;
+   }
+
+   .sp_adjustment_tool_name {
+    font-size: 14px;
+}
+
+.sp_support_text {
+    padding-top: 30px;
+}
+
+.works_wrap {
+    display: none;
+}
+
+.sp_works {
+    display: block;
+    margin-bottom: 150px;
+}
+
+.sp_works_thread {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.works_mock {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.sp_works_mock {
+    width: 290px;
+}
+
+.sp_works_text {
+    padding: 15px 0 60px 0;
+    text-align: center;
+}
+
+.sp_works_more {
+    padding-right: 10px;
+}
+
+.sp_works_more_wrap {
+    text-align: right;
+    padding-right: 60px;
+}
+
+.sp_ida_works_more_btn {
+    width: 144px;
+}
+
+.contact {
+    display: none;
+}
+
+.sp_contact {
+    display: block;
+}
+
+.sp_contact_thread {
+    padding-bottom: 50px;
+}
+
+.sp_contact_text {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.sp_contact_box {
+    width: 315px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+.sp_conrtact_name {
+    padding:15px 0 0 30px;
+}
+
+.sp_contact_box_last {
+    width: 315px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+}
+
+.sp_contact_btn_wrap {
+    width: 200px;
+    height: 60px;
+    margin: 0 auto;
 }
 
 
 
+
+.hooter_wrap {
+    display: none;
+}
+
+.sp_footer {
+    display: block;
+}
+
+
+
+}
 
 
