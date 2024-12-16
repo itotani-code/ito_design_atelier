@@ -52,6 +52,10 @@ body {
 
 /* ここまでリセットcss */
 
+.tab_header {
+    display: none;
+}
+
 .header_logo {
     width: 203px;
     padding: 10px 0 0 70px;
@@ -120,6 +124,10 @@ body {
   }
 
   .sp_commitment_br {
+    display: none;
+  }
+
+  .tab_commitment {
     display: none;
   }
   
@@ -216,6 +224,9 @@ body {
     display: none;
   }
 
+  .tab_about_wrap {
+    display: none;
+  }
 
 
 
@@ -779,8 +790,320 @@ z-index: 100;
     }
 }
 
+/* タブ */
+@media screen and (max-width: 767px) {
 
-@media screen and (max-width: 375px) {
+    .header {
+        display: none;
+    }
+
+    .tab_header {
+        display: block;
+    }
+
+    .tab_catchcopy {
+        max-width: 375px;
+        writing-mode: vertical-rl;
+        text-align: left;
+        font-size: 40px;
+        padding: 100px 0 0 165px;
+    }
+
+    .thread_color {
+        font-size: 40px;
+    }
+
+    .commitment_img {
+        display: none;
+    }
+
+    .commitment {
+        display: none;
+    }
+
+    .tab_commitment {
+        display: block;
+        padding: 760px 0 0 75px;
+    }
+
+    .tab_commitment_text {
+        line-height: 2.0;
+    }
+    
+    .catchcopy {
+        position: relative;
+        padding: 35px 0 0 82px
+    }
+
+    .tab_catchcopy {
+        position: relative;
+        padding: 130px 0 0 150px;
+        font-size: 35px;
+    }
+    
+
+    .tab_commitment_img {
+        display: block;
+        width: 480px;
+        position: absolute;
+        top: 0%;
+        right: 0%;
+    }
+    
+    .commitment {
+        width: 88%;
+        margin-top: 85px;
+        font-size: 16px;
+        text-align: start;
+        padding-left: 30px;
+    }
+
+    .commitment_color {
+        font-size: 16px;
+    }
+
+    .pc_commitment_br {
+        display: none;
+    }
+
+    #logo_mind {
+        margin: 0;
+    }
+
+    .logo_text {
+        padding-right: 0;
+    }
+
+    .logo_thought {
+        width: 215px;
+    }
+
+   .about_wrap {
+        display: none;
+   }
+
+   .sp_about_wrap {
+    display: none;
+   }
+
+   .tab_about_thread { 
+        max-width: 767px;
+        width: 100%;
+        margin: 160px 0 100px ;
+   }
+
+   
+   .tab_about_wrap {
+    display: block;
+       max-width: 617px;
+       margin: 35px auto 30px ;
+       display: flex;
+       justify-content: space-between;
+    }
+
+    .tab_about_text {
+        padding: 50px 0 50px 0;
+    }
+
+    .tab_about_btn {
+        text-align: right;
+    }
+    
+  .tab_about_outer {
+    margin-bottom: 130px;
+  }
+
+   .sp_about_text_wrap {
+    padding-top: 50px;
+   }
+
+   .sp_about_name {
+    font-size: 18px;
+   }
+
+   .sp_about_name_color {
+    color: #c33f4e;
+   }
+
+   .sp_about_name_size {
+    font-size: 10px;
+   }
+
+   .ida_tab_about {
+    width: 230px;
+   }
+
+   .sp_about_btn {
+    padding: 30px 0 130px 0;
+    text-align: end;
+
+   }
+
+   .sp_about_more {
+    width: 123px;
+   }
+
+   .support {
+    display: none;
+   }
+
+   .sp_support {
+    display: none;
+   }
+
+   .tab_support {
+    max-width: 480px;
+    margin: 0 auto;
+   }
+
+   .tab_support_h3 {
+    font-size: 25px;
+    text-align: center;
+   }
+
+   .sp_tool_name {
+    text-align: center;
+    font-size: 20px;
+    padding: 70px 0 20px 0;
+   }
+
+   .sp_support_box {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+   }
+
+   .sp_support_border {
+    border-bottom:1px solid #888888;
+    padding-top: 20px;
+   }
+
+   .sp_adjustment_tool_name {
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   }
+
+   .sp_support_text {
+   padding-top: 30px;
+   }
+
+   .works_wrap {
+    display: none;
+   }
+
+   
+
+.tab_works {
+    display: block;
+}
+
+.tab_works_mock {
+    text-align: center;
+    padding-top: 50px;
+}
+
+
+
+.sp_works_mock {
+    width: 480px;
+}
+
+.sp_works_thread {
+    max-width: 767px;
+    width: 100%;
+    padding: 180px 0 30px 0;
+}
+
+
+.tab_works_text {
+    padding: 35px 0 100px 0;
+    text-align: center;
+    font-size: 20px;
+}
+
+.sp_works_more {
+    padding-right: 10px;
+}
+
+.tab_works_more_wrap {
+    text-align: right;
+    padding-right: 19%;
+}
+
+.sp_ida_works_more_btn {
+    width: 144px;
+}
+
+.contact {
+    display: none;
+}
+
+.tab_contact_form {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.tab_contact_form_last {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.tab_contact {
+    display: block;
+}
+
+.sp_contact_thread {
+    padding-bottom: 50px;
+    font-size: 20px;
+}
+
+.tab_contact_text {
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.tab_conrtact_name {
+    padding:15px 0 0 0px;
+}
+
+.sp_contact_box {
+    width: 480px;
+    height: 30px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    border-radius: 6px;
+}
+
+.sp_contact_box_last {
+    width: 480px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    border-radius: 6px;
+}
+
+.sp_contact_btn_wrap {
+    width: 200px;
+    height: 60px;
+    margin: 0 auto;
+}
+
+.hooter_wrap {
+    display: none;
+}
+
+.sp_footer {
+    display: block;
+}
+
+}
+
+
+/* スマホ版保存↓ */
+
+/* @media screen and (max-width: 375px) {
 
     .catchcopy {
         max-width: 375px;
@@ -803,7 +1126,7 @@ z-index: 100;
         padding: 35px 0 0 82px
     }
     
-    /* あしらいったん消す */
+    /* あしらいいったん消す */
 
     /* .sp_commitment_img {
         display: block;
@@ -811,7 +1134,7 @@ z-index: 100;
         position: absolute;
         top: 0%;
         right: 0%;
-    } */
+    } 
     .commitment {
         width: 88%;
         margin-top: 85px;
@@ -848,7 +1171,7 @@ z-index: 100;
         display: none;
    }
 
-   /* 表示されない・・・ */
+
    .sp_about_thread { 
         max-width: 375px;
         width: 100%;
@@ -914,6 +1237,7 @@ z-index: 100;
 
    .sp_tool_name {
     text-align: center;
+    font-size: 20px;
     padding: 70px 0 20px 0;
    }
 
@@ -930,6 +1254,9 @@ z-index: 100;
 
    .sp_adjustment_tool_name {
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .sp_support_text {
@@ -1031,6 +1358,4 @@ z-index: 100;
 
 
 
-}
-
-
+} */
