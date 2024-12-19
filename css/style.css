@@ -115,7 +115,7 @@ body {
   .commitment {
     font-size: 18px;
     text-align: center;
-    line-height: 1.87;
+    line-height: 1.6;
     margin: 426px 0 0;
   }
 
@@ -152,6 +152,10 @@ body {
     gap: 10px;
   }
 
+  .tab_logo_contents {
+    display: none;
+  }
+
   /* カンプみて調節 */
 
   .logo_thought {
@@ -182,10 +186,9 @@ body {
 }
 
 .about_thread {
-  width: 300px;
+  width: 21%;
   position: absolute;
   top: -80px;
-  /* カンプみて調節 */
   right: 0;
 }
 
@@ -226,6 +229,18 @@ body {
 
   .tab_about_wrap {
     display: none;
+  }
+
+  .about_thread_adjustment {
+    display: none;
+  }
+
+  .tab_about_outer {
+    display: none;
+  }
+
+  .tab_about {
+    margin: 0 8% 0;
   }
 
 
@@ -307,6 +322,12 @@ body {
     align-items: center;
 }
 
+.tab_support {
+    display: none;
+}
+.support {
+    margin: 0 8% 0;
+}
 
 
 
@@ -344,8 +365,8 @@ body {
     padding: 70px 0 5px 320px;
 }
 
-.works_more_text {
-   padding-left: 200px; 
+.works_more_padding {
+    padding-left: 35px;
 }
 
 .ida_works_more_btn {
@@ -358,14 +379,20 @@ body {
     display: none;
 }
 
+.tab_works {
+    display: none;
+}
+
+.sp_works_thread {
+    display: none;
+}
+
 
 
 .contact_text {
     text-align: center;
     line-height: 1.87;
     padding: 310px 0 60px 0;
-
-    /* カンプとズレ */
 }
 
 .contact_box {
@@ -446,6 +473,9 @@ body {
     text-align: end;
 } 
 
+.tab_contact {
+    display: none;
+}
 
 
 
@@ -486,7 +516,17 @@ body {
     left: 250px;
 }
 
+.tab_thanks {
+    display: none;
+}
+
+
+
 /* ここからAboutページ */
+
+.tab_maincontents  {
+    display: none;
+}
 
 .aboutme_contents {
     margin-top: 100px;
@@ -550,6 +590,10 @@ z-index: 100;
     padding-bottom: 100px;
 }
 
+.tab_hobby_wrap {
+    display: none;
+}
+
 .lower_contact {
     padding-top: 200px;
 }
@@ -582,7 +626,9 @@ z-index: 100;
     display: none;
 }
 
-
+.hobby_btn_wrap {
+    display: none;
+}
 
 .return_wrap {
     margin-bottom: 40px;
@@ -628,6 +674,14 @@ z-index: 100;
     text-align: end;
 }
 
+.tab_about_me_02 {
+    display: none;
+}
+
+.tab_aboutme_title_02 {
+    display: none;
+}
+
 /* ここからロゴページ */
 
 .logo_tittle {
@@ -650,12 +704,34 @@ z-index: 100;
     font-size: 22px;
 }
 
+.br_550px {
+    display: none;
+}
+
 .logo_wrap {
     display: flex;
     justify-content: center;
     gap: 100px;
-    padding: 40px 0 130px 0;
+    padding: 40px 0 130px ;
+    margin: 0 8% 0;
 }
+
+.tab_br_767px {
+    display: none;
+}
+
+.sp_br_480px {
+    display: none;
+}
+
+ .sp_br_395px {
+    display: none;
+}
+
+.sp_br_375px {
+    display: none;
+}
+
 
 /* ここからworksページ */
 
@@ -679,8 +755,8 @@ z-index: 100;
 .menu_wrap {
     display: flex;
     justify-content: center;
-    gap: 50px;
-    margin: 130px 0 160px 0;
+    gap: 6%;
+    margin: 10% 8% 13%;
 }
 
 .works_exhibition {
@@ -802,11 +878,12 @@ z-index: 100;
     }
 
     .tab_catchcopy {
-        max-width: 375px;
+        /* max-width: 375px; */
         writing-mode: vertical-rl;
         text-align: left;
         font-size: 40px;
-        padding: 100px 0 0 165px;
+        padding: 100px 0 0 375px;
+
     }
 
     .thread_color {
@@ -844,7 +921,7 @@ z-index: 100;
 
     .tab_commitment_img {
         display: block;
-        width: 480px;
+        width: 75%;
         position: absolute;
         top: 0%;
         right: 0%;
@@ -887,9 +964,7 @@ z-index: 100;
    }
 
    .tab_about_thread { 
-        max-width: 767px;
-        width: 100%;
-        margin: 160px 0 100px ;
+     display: none;
    }
 
    
@@ -907,6 +982,10 @@ z-index: 100;
 
     .tab_about_btn {
         text-align: right;
+    }
+
+    .tab_about_outer {
+        display: block;
     }
     
   .tab_about_outer {
@@ -943,8 +1022,20 @@ z-index: 100;
     width: 123px;
    }
 
+   .ida_aboutme_thread {
+    display: none;
+   }
+
+   .lower_contact_text {
+    margin: 0 8% 0;
+   }
+
    .support {
     display: none;
+   }
+
+   .tab_support {
+    display: block;
    }
 
    .sp_support {
@@ -1004,17 +1095,11 @@ z-index: 100;
     padding-top: 50px;
 }
 
-
-
 .sp_works_mock {
     width: 480px;
 }
 
-.sp_works_thread {
-    max-width: 767px;
-    width: 100%;
-    padding: 180px 0 30px 0;
-}
+
 
 
 .tab_works_text {
@@ -1098,7 +1183,313 @@ z-index: 100;
     display: block;
 }
 
+/* thanksページ */
+
+.thanks {
+    display: none;
+} 
+
+.tab_thanks {
+    display: block;
 }
+
+.message {
+    position: relative;
+}
+.ida_thanks_thread {
+    width: 100%;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+}
+
+.toppage_jump {
+    padding: 90px 0 50px;
+}
+
+.tab_message_text_wrap {
+    margin: 0 8% 0;
+}
+
+.tab_thanks_thread {
+    padding: 10% 0 10%;
+}
+
+/* ロゴページ */
+
+.logo_contents {
+    display: none;
+}
+
+.tab_logo_contents {
+    display: block;
+}
+
+.tab_logo_tittle {
+    margin: 115px 0 45px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.tab_logo_visual {
+    width: 53%;
+    margin: 0 auto;
+    padding-bottom: 45px;
+}
+
+.tab_logo_wrap {
+    margin-bottom: 100px;
+    padding: 0 8% 0;
+}
+
+
+
+.logo_text_adjustment {
+    line-height: 2;
+    font-size: 16px;
+}
+
+.tab_br_767px {
+    display: block;
+}
+
+.logo_text_color {
+    font-size: 18px;
+}
+
+.pc_br_1366px {
+    display: none;
+} 
+
+/* アバウトページ */
+
+.maincontents  {
+    display: none;
+}
+
+.tab_maincontents  {
+    display: block;
+    margin: 0 8% 0;
+    justify-content: space-between;
+}
+
+.tab_aboutme_thread {
+    display: none;
+}
+
+.tab_aboutme_wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 13%
+}
+
+.tab_ida_aboutme_01 {
+    width: 40%;
+}
+
+.tab_about_text_02 {
+    margin-top: auto;
+    padding: 0 20% 5% 0;
+}
+
+.tab_aboutme_wrap {
+    margin: 10% 0 7%;
+}
+
+.aboutme_title_02 {
+    display: none;
+}
+
+.tab_aboutme_title_02 {
+    display: block;
+    text-align: center;
+    padding: 15% 0 5%;
+}
+
+.tab_about_me_02 {
+    width: 30%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+
+.tab_hobby_btn {
+    width: 300px;
+    height: 50px;
+    border: 1px dashed #c33f4e;
+    border-radius: 15px;
+}
+
+.hobby_btn_tittle {
+    font-size: 20px;
+    text-align: center;
+    padding: 10px 0 10px;
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.dli-chevron-down {
+    display: inline-block;
+    vertical-align: middle;
+    color: #c33f4e;
+    line-height: 1;
+    margin-top: 7px;
+    width: 0.7em;
+    height: 0.7em;
+    border: 0.1em solid currentColor;
+    border-radius: 1px;
+    border-left: 0;
+    border-bottom: 0;
+    box-sizing: border-box;
+    transform: translateY(-25%) rotate(135deg);
+  }
+
+  .hobby_btn_wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 5%;
+    margin: 0 8% 15%;
+
+  }
+
+  .hobby_wrap {
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+    .works_exhibition {
+        flex-direction: column;
+        align-items: center;
+      }
+}
+
+@media screen and (max-width: 980px) {
+
+    .works_img {
+        display: none;
+    }
+
+    .sp_works_thread {
+        display: block;
+        max-width: 980px;
+        width: 100%;
+        padding: 180px 0 30px 0;
+    }
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .border_deco {
+        width: 64px;
+    }
+
+    .menu_wrap {
+        padding-bottom: 20%;
+    } 
+
+    .br_550px {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1230px)  {
+    .thanks_img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1260px)  {
+
+    .about_thread {
+        display: none;
+    }
+
+    .contact_img {
+        display: none;
+    }
+
+    .about_thread_adjustment {
+        display: block;
+        width: 100%;
+        margin: 20% 0 13% ;
+    }
+}
+
+
+@media screen and (max-width: 480px)  {
+
+   .br_550px {
+    display: none;
+   }
+
+   .tab_br_767px {
+    display: none;
+   }
+   
+   .pc_br_1366px {
+    display: none;
+   }
+
+   .sp_br_480px {
+    display: block;
+   }
+}
+
+@media screen and (max-width: 395px) {
+    
+    .sp_br_395px {
+        display: block;
+       }
+
+    .br_550px {
+        display: none;
+       }
+    
+       .tab_br_767px {
+        display: none;
+       }
+       
+       .pc_br_1366px {
+        display: none;
+       }
+    
+       .sp_br_480px {
+        display: none;
+       }
+}
+
+@media screen and (max-width: 375px) {
+    .sp_br_395px {
+        display: none;
+       }
+
+    .br_550px {
+        display: none;
+       }
+    
+       .tab_br_767px {
+        display: none;
+       }
+       
+       .pc_br_1366px {
+        display: none;
+       }
+    
+       .sp_br_480px {
+        display: none;
+       }
+
+       .sp_br_375px {
+        display: block;
+       }
+}
+
+
+
 
 
 /* スマホ版保存↓ */
