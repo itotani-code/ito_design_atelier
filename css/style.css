@@ -78,15 +78,6 @@ body {
     top: 0;
     left: 0;
   }
-
-@media screen and (max-width: 900px) {
-
-  .catchcopy {
-      font-size: 35px;
-      left: auto;
-      right: 25%;
-  } 
-}
   
 
   .pc_nav {
@@ -124,6 +115,16 @@ body {
     position: absolute;
     top:  230px ;
     left: 330px;
+  }
+
+  @media screen and (max-width: 930px) {
+
+    .catchcopy {
+        font-size: 35px;
+        left: auto;
+        top: 150px;
+        right: 20%;
+    } 
   }
 
 
