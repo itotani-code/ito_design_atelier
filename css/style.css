@@ -71,11 +71,23 @@ body {
 
 /* あしらい固定 */
 .commitment_img {
-    width: 68%;
+    /* width: 68%; */
+    max-width: 900px;
+    width: 90%;
     position: absolute;
     top: 0;
     left: 0;
   }
+
+@media screen and (max-width: 900px) {
+
+  .catchcopy {
+      font-size: 35px;
+      left: auto;
+      right: 25%;
+  } 
+}
+  
 
   .pc_nav {
     padding: 0 0 25px 0;
@@ -100,6 +112,7 @@ body {
 
   .header {
     position: relative;
+    /* height: 100vh; */
   }
 
   /* キャッチコピー */
@@ -109,9 +122,11 @@ body {
     /* margin: 270px 0 0 375px; */
     font-weight: normal;
     position: absolute;
-    top: 270px ;
-    left: 25%;
+    top:  230px ;
+    left: 330px;
   }
+
+
   
   /* 糸だけ色を変える */
   .thread_color {
