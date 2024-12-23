@@ -97,12 +97,20 @@ body {
     display: none;
   }
 
+
+  .header {
+    position: relative;
+  }
+
   /* キャッチコピー */
   .catchcopy {
     font-size: 40px;
     line-height: 1.87;
-    margin: 270px 0 0 375px;
+    /* margin: 270px 0 0 375px; */
     font-weight: normal;
+    position: absolute;
+    top: 270px ;
+    left: 25%;
   }
   
   /* 糸だけ色を変える */
@@ -116,7 +124,7 @@ body {
     font-size: 18px;
     text-align: center;
     line-height: 1.6;
-    margin: 426px 0 0;
+    margin: 65% 0 0;
   }
 
   .sp_commitment_img {
@@ -205,6 +213,14 @@ body {
   }
   .about_name_size {
     font-size: 16px;
+  }
+
+  @media screen and (max-width: 767px) {
+
+    .about_name_size {
+        font-size: 13px;
+    }
+    
   }
 
   .about_img {
@@ -766,6 +782,14 @@ z-index: 100;
     gap: 100px;
 }
 
+@media screen and (max-width: 767px) {
+
+    .works_exhibition {
+        gap: 0px;
+    }
+    
+}
+
 .exhibition_box {
     background-color: #f3e6d8;
     width: 350px;
@@ -862,6 +886,10 @@ z-index: 100;
 
 @media screen and (max-width: 1180px) {
     .pc_nav {
+        display: none;
+    }
+
+    .ida_aboutme_thread {
         display: none;
     }
 }
