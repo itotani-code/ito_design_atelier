@@ -58,7 +58,7 @@ body {
 
 .header_logo {
     width: 203px;
-    padding: 10px 0 0 70px;
+    padding: 5% 0 0 35%;
     position: relative;
 }
 
@@ -917,6 +917,11 @@ z-index: 100;
         display: none;
     }
 
+    .header_logo {
+        width: 180px;
+        padding: 5% 0 0 10%;
+       }
+
     .tab_header {
         display: block;
     }
@@ -944,11 +949,12 @@ z-index: 100;
 
     .tab_commitment {
         display: block;
-        padding: 760px 0 0 75px;
+        padding: 100% 10% 0;
     }
 
     .tab_commitment_text {
         line-height: 2.0;
+        text-align: center;
     }
     
     .catchcopy {
@@ -958,8 +964,8 @@ z-index: 100;
 
     .tab_catchcopy {
         position: relative;
-        padding: 130px 0 0 150px;
-        font-size: 35px;
+        padding: 25% 0 0 22%;
+        font-size: 38px;
     }
     
 
@@ -1140,7 +1146,8 @@ z-index: 100;
 }
 
 .sp_works_mock {
-    width: 480px;
+    max-width: 767px;
+    width: 90%;
 }
 
 
@@ -1149,7 +1156,7 @@ z-index: 100;
 .tab_works_text {
     padding: 35px 0 100px 0;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .sp_works_more {
@@ -1170,12 +1177,13 @@ z-index: 100;
 }
 
 .tab_contact_form {
-    max-width: 480px;
+    
+    max-width: 315px;
     margin: 0 auto;
 }
 
 .tab_contact_form_last {
-    max-width: 480px;
+    max-width: 315px;
     margin: 0 auto;
 }
 
@@ -1191,6 +1199,7 @@ z-index: 100;
 .tab_contact_text {
     text-align: center;
     padding-bottom: 80px;
+    margin: 0 8% 0;
 }
 
 .tab_conrtact_name {
@@ -1198,15 +1207,15 @@ z-index: 100;
 }
 
 .sp_contact_box {
-    width: 480px;
-    height: 30px;
+    width: 315px;
+    height: 40px;
     margin: 0 auto;
     background-color: antiquewhite;
     border-radius: 6px;
 }
 
 .sp_contact_box_last {
-    width: 480px;
+    width: 315px;
     height: 200px;
     margin: 0 auto;
     background-color: antiquewhite;
@@ -1403,11 +1412,49 @@ z-index: 100;
 
 }
 
-@media screen and (max-width: 900px) {
-    .works_exhibition {
-        flex-direction: column;
-        align-items: center;
-      }
+
+
+@media screen and (max-width: 1230px)  {
+    .thanks_img {
+        display: none;
+    }
+
+    .commitment {
+        font-size: 16px;
+        margin: 75% 0 0;
+    }
+}
+
+
+@media screen and (max-width: 1260px)  {
+
+    .about_thread {
+        /* display: none; */
+        width: 18%;
+    }
+
+    .contact_img {
+        display: none;
+    }
+
+    
+}
+
+@media screen and (max-width: 1100px)  {
+
+    .commitment {
+        margin-left: 10%;
+    }
+
+    .about_thread_adjustment {
+        display: block;
+        width: 100%;
+        margin: 25% 0 5% ;
+    }
+
+    .about_thread {
+        display: none; 
+    }
 }
 
 @media screen and (max-width: 980px) {
@@ -1422,8 +1469,43 @@ z-index: 100;
         width: 100%;
         padding: 180px 0 30px 0;
     }
+
+    .commitment {
+        margin-top: 80%;
+        font-size: 13px;
+    }
+
+    .logo_text {
+        font-size: 13px;
+    }
 }
 
+@media screen and (max-width: 900px) {
+    .works_exhibition {
+        flex-direction: column;
+        align-items: center;
+      }
+}
+@media screen and (max-width: 700px) {
+    .tab_commitment {
+        padding: 90% 10% 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .ida_tab_about {
+        width: 50%;
+        padding-top: 50px;
+    }
+
+    .tab_catchcopy {
+        padding: 20% 0 0 22%;
+        font-size: 35px;
+    }
+
+    .tab_commitment {
+        padding: 80% 10% 0;
+    }
+}
 
 @media screen and (max-width: 550px) {
 
@@ -1438,29 +1520,11 @@ z-index: 100;
     .br_550px {
         display: block;
     }
-}
 
-@media screen and (max-width: 1230px)  {
-    .thanks_img {
-        display: none;
-    }
-}
-
-@media screen and (max-width: 1260px)  {
-
-    .about_thread {
-        display: none;
+    .tab_commitment {
+        padding: 70% 10% 0;
     }
 
-    .contact_img {
-        display: none;
-    }
-
-    .about_thread_adjustment {
-        display: block;
-        width: 100%;
-        margin: 20% 0 13% ;
-    }
 }
 
 
@@ -1481,7 +1545,55 @@ z-index: 100;
    .sp_br_480px {
     display: block;
    }
+
+   .tab_support {
+    /* width: 90%; */
+    margin: 0 8% 0;
 }
+
+.tab_catchcopy {
+    padding: 18% 0 0 22%;
+    font-size: 30px;
+}
+.header_logo {
+    width: 140px;
+}
+
+.tab_catchcopy {
+    font-size: 30px;
+    padding-top: 15%;
+}
+
+.tab_commitment {
+    padding: 90% 10% 0;
+}
+
+.tab_commitment_text {
+    text-align: left;
+}
+
+}
+
+@media screen and (max-width: 400px) {
+
+    .tab_contact_text {
+        font-size: 14px;
+    }
+
+    .header_logo {
+        width: 120px;
+    }
+
+    .tab_commitment {
+        padding: 71% 10% 0;
+    }
+    
+
+    .logo > a {
+        margin-top: 70px;
+    }
+}
+
 
 @media screen and (max-width: 395px) {
     
@@ -1504,6 +1616,7 @@ z-index: 100;
        .sp_br_480px {
         display: none;
        }
+
 }
 
 @media screen and (max-width: 375px) {
@@ -1529,6 +1642,10 @@ z-index: 100;
 
        .sp_br_375px {
         display: block;
+       }
+
+       .header_logo {
+        width: 120px;
        }
 }
 
