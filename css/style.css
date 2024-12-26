@@ -48,9 +48,11 @@ body {
     /* max-width: 1000px; */
     margin: 0 auto;
     background-color: #fcf8e7;
-    /* background-image: url(./images/PF_texture.jpg);
-    width: 1366px;
-    height: 1000px; */
+     background-image: url(../images/PF_texture_03.jpg); 
+     background-size: 100%;
+     background-blend-mode: multiply;
+    /* width: 1366px;
+    height: 1000px;  */
 }
 
 /* ここまでリセットcss */
