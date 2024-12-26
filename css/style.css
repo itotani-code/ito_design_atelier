@@ -48,6 +48,9 @@ body {
     /* max-width: 1000px; */
     margin: 0 auto;
     background-color: #fcf8e7;
+    /* background-image: url(./images/PF_texture.jpg);
+    width: 1366px;
+    height: 1000px; */
 }
 
 /* ここまでリセットcss */
@@ -83,6 +86,8 @@ body {
   .pc_nav {
     padding: 0 0 25px 0;
   }
+
+  
 
 
 .pc_nav ul {
@@ -255,6 +260,10 @@ body {
     width: 144px;
   }
 
+  .about_more_text {
+    padding-left: 30px;
+  }
+
   .sp_about_wrap {
     display: none;
   }
@@ -275,8 +284,6 @@ body {
     margin: 0 8% 0;
   }
 
-
-
   .about_btn {
     display: block;
     width: 10%;
@@ -285,6 +292,10 @@ body {
     top: 2200px;
     left: 0px;
     /* 一旦これで応急処置して他を進める */
+  }
+
+  .sp_about_outer {
+    display: none;
   }
 
   .sp_support {
@@ -398,13 +409,12 @@ body {
 }
 
 .works_more_padding {
-    padding-left: 35px;
+    padding-left: 55px;
 }
 
 .ida_works_more_btn {
     width: 145px;
     display: flex;
-    
 }
 
 .sp_works {
@@ -490,13 +500,13 @@ body {
 
 .hooter {
     width: 100%;
-    height: 100px;
+    height: 70px;
     background-color: #c33f4e;
 }
 
 .hooter_text {
     text-align: center;
-    padding: 40px 0 0 0;
+    padding: 25px 0 0 0;
     color: #fff;
 }
 
@@ -509,6 +519,9 @@ body {
     display: none;
 }
 
+.sp_contact_thread {
+    display: none;
+}
 
 
 
@@ -585,6 +598,7 @@ z-index: 100;
     display: flex;
     justify-content: center;
     gap: 60px;
+    margin: 0 8% 0;
 }
 
 .aboutme_text {
@@ -798,6 +812,10 @@ z-index: 100;
     gap: 100px;
 }
 
+
+.sp_works_under {
+    display: none;
+}
 @media screen and (max-width: 767px) {
 
     .works_exhibition {
@@ -897,6 +915,8 @@ z-index: 100;
 .look_lp_btn {
     text-align: center;
 }
+
+
 
 /* ここからレスポンシブ */
 
@@ -1017,13 +1037,22 @@ z-index: 100;
      display: none;
    }
 
-   
+   .sp_about_outer {
+    display: none;
+   }
+
+
+
+
+
+
    .tab_about_wrap {
     display: block;
        max-width: 617px;
        margin: 35px auto 30px ;
        display: flex;
-       justify-content: space-between;
+       justify-content: center;
+       gap: 50px;
     }
 
     .tab_about_text {
@@ -1074,6 +1103,10 @@ z-index: 100;
 
    .ida_aboutme_thread {
     display: none;
+   }
+
+   .self_introduction {
+    line-height: 1.7;
    }
 
    .lower_contact_text {
@@ -1151,8 +1184,6 @@ z-index: 100;
 }
 
 
-
-
 .tab_works_text {
     padding: 35px 0 100px 0;
     text-align: center;
@@ -1191,10 +1222,7 @@ z-index: 100;
     display: block;
 }
 
-.sp_contact_thread {
-    padding-bottom: 50px;
-    font-size: 20px;
-}
+
 
 .tab_contact_text {
     text-align: center;
@@ -1228,9 +1256,7 @@ z-index: 100;
     margin: 0 auto;
 }
 
-.hooter_wrap {
-    display: none;
-}
+
 
 .sp_footer {
     display: block;
@@ -1314,6 +1340,10 @@ z-index: 100;
     display: none;
 } 
 
+.logo_text {
+    padding-right: 10px;
+}
+
 /* アバウトページ */
 
 .maincontents  {
@@ -1333,7 +1363,7 @@ z-index: 100;
 .tab_aboutme_wrap {
     display: flex;
     justify-content: space-between;
-    gap: 13%
+
 }
 
 .tab_ida_aboutme_01 {
@@ -1342,7 +1372,7 @@ z-index: 100;
 
 .tab_about_text_02 {
     margin-top: auto;
-    padding: 0 20% 5% 0;
+    padding-bottom: 5%;
 }
 
 .tab_aboutme_wrap {
@@ -1410,7 +1440,90 @@ z-index: 100;
     display: none;
   }
 
+  .tab_ida_aboutme_01 {
+
+    width: 50%;
+  }
+
+  .tab_about_name {
+    font-size: 24px;
+    display: flex;
+ 
+  }
+
+  .about_name_size {
+    padding: 5px 0 0 10px;
+  }
+
+  .sp_hooter {
+    width: 100%;
+    height: 70px;
+    background-color: #c33f4e;
 }
+
+.sp_hooter_text {
+    color: #fff;
+    text-align: center;
+    padding-top: 25px;
+}
+
+/* works下層 */
+.works_under {
+    display: none;
+}
+
+.sp_works_under {
+    display: block;
+}
+
+.mock_frame {
+    width: 70%;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #f3e6d9;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.sp_mock_custom {
+
+    width: 35%;
+    padding-top: 60px;
+}
+
+.sp_works_name {
+    font-size: 25px;
+    text-align: center;
+    padding: 30px 0 50px ;
+}
+
+.sp_worls_under_wrap {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 100px auto 0;
+}
+
+.sp_border_line {
+    border-bottom:1px solid #888888;
+    width: 70%;
+    margin: 80px 0 30px 0;
+    margin: 0 auto;
+} 
+
+.sp_works_detail_text {
+
+    width: 70%;
+    text-align: left;
+    margin: 0 15% 150px;
+
+
+}
+
+
+
+}
+
 
 
 
@@ -1426,6 +1539,8 @@ z-index: 100;
 }
 
 
+
+
 @media screen and (max-width: 1260px)  {
 
     .about_thread {
@@ -1434,7 +1549,7 @@ z-index: 100;
     }
 
     .contact_img {
-        display: none;
+        width: 18%;
     }
 
     
@@ -1454,6 +1569,31 @@ z-index: 100;
 
     .about_thread {
         display: none; 
+    }
+
+
+}
+
+@media screen and (max-width: 1025px)  {
+
+    .contact_img {
+   display: none;
+    }
+
+    .sp_contact_thread {
+        display: block;
+        max-width: 1025px;
+        width: 100%;
+        padding: 140px 0 30px 0;
+    }
+
+    .contact_text {
+        padding: 50px 0 80px 0;
+    }
+
+    .ida_aboutme_01 {
+        padding-top: 10%;
+        width: 40%;
     }
 }
 
@@ -1478,6 +1618,8 @@ z-index: 100;
     .logo_text {
         font-size: 13px;
     }
+
+
 }
 
 @media screen and (max-width: 900px) {
@@ -1485,12 +1627,95 @@ z-index: 100;
         flex-direction: column;
         align-items: center;
       }
+
+      .ida_aboutme_01 {
+        width: 50%;
+    }
+
+    .about_introduction {
+        font-size: 14px;
+    }
+
+    /* .works_under {
+        margin: 0 8% 0;
+    }
+
+    .sp_mock_width {
+        width: 28%;
+    } */
 }
+
+@media screen and (max-width: 735px) {
+
+    .tab_about_name {
+        display: block;
+    }
+  
+    .about_name_size {
+        padding-left: 0px;
+    }
+
+    .tab_about_text_02 {
+        padding-right: 10%;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    .sp_about_outer {
+        display: block;
+      }
+
+      .tab_about_outer {
+        display: none;
+      }
+
+      .about_text_flex {
+        padding-top: 40%;
+      }
+
+      .sp_introduction {
+        font-size: 24px;
+      }
+
+      .sp_about {
+        display: flex;
+        justify-content: space-between;
+        /* gap: 55px; */
+        margin: 10% 10% 0;
+      }
+
+      .ida_sp_about {
+        width: 40%;
+      }
+
+      .sp_about_introduction {
+        width: 80%;
+        margin: 30px auto 80px;
+      }
+
+      .sp_about_btn_02 {
+        margin: 0 17% 150px;
+        text-align: end;
+      }
+}
+
+
 @media screen and (max-width: 700px) {
     .tab_commitment {
         padding: 90% 10% 0;
     }
+
+    .tab_about_me_02 {
+        width: 35%;
+    }
+
+    .ida_aboutme_01 {
+        padding-top: 30%;
 }
+}
+
+
 @media screen and (max-width: 600px) {
     .ida_tab_about {
         width: 50%;
@@ -1527,6 +1752,13 @@ z-index: 100;
 
 }
 
+@media screen and (max-width: 510px) {
+
+    .sp_introduction {
+        font-size: 21px;
+      }
+}
+
 
 @media screen and (max-width: 480px)  {
 
@@ -1549,9 +1781,13 @@ z-index: 100;
    .tab_support {
     /* width: 90%; */
     margin: 0 8% 0;
-}
+   }
 
-.tab_catchcopy {
+   .br_480px_none {
+    display: none;
+   }
+
+   .tab_catchcopy {
     padding: 18% 0 0 22%;
     font-size: 30px;
 }
@@ -1564,15 +1800,47 @@ z-index: 100;
     padding-top: 15%;
 }
 
-.tab_commitment {
+/* .tab_commitment {
     padding: 90% 10% 0;
-}
+} */
 
 .tab_commitment_text {
     text-align: left;
 }
 
+.sp_works_thread {
+    padding-top: 100px;
 }
+
+.ida_tab_about {
+    width: 60%;
+}
+
+.sp_about_name_size {
+    padding-bottom: 100px;
+}
+
+.sp_about_btn_02 {
+    margin: 0 8% 150px;
+}
+
+.sp_about_introduction {
+        width: 84%;
+        /* margin: 30px auto 80px; */
+}
+
+.ida_sp_about {
+
+    width: 50%;
+}
+
+.tab_about_name {
+    font-size: 18px;
+}
+}
+
+
+
 
 @media screen and (max-width: 400px) {
 
@@ -1591,6 +1859,19 @@ z-index: 100;
 
     .logo > a {
         margin-top: 70px;
+    }
+
+    .tab_ida_aboutme_01 {
+
+        width: 90%;
+    }
+
+    .about_name_size {
+        font-size: 12px;
+    }
+
+    .tab_about_name {
+        font-size: 16px;
     }
 }
 
@@ -1617,9 +1898,18 @@ z-index: 100;
         display: none;
        }
 
+       .sp_introduction {
+
+        font-size: 18px;
+       }
+
+       .sp_about_introduction {
+        font-size: 14px;
+       }
 }
 
 @media screen and (max-width: 375px) {
+
     .sp_br_395px {
         display: none;
        }
@@ -1647,6 +1937,17 @@ z-index: 100;
        .header_logo {
         width: 120px;
        }
+}
+
+
+@media screen and (max-width: 350px) {
+
+   .works_exhibition {
+    width:  90%;
+}
+
+
+
 }
 
 
