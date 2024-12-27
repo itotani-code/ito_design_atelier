@@ -72,6 +72,7 @@ body {
     justify-content: space-between;
     align-items: flex-end;
     position: relative;
+    z-index: 200;
 }
 
 /* あしらい固定 */
@@ -408,10 +409,12 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 70px 0 5px 320px;
+    position: relative;
+    z-index: 200;
 }
 
 .works_more_padding {
-    padding-left: 55px;
+    padding-right: 5px;
 }
 
 .ida_works_more_btn {
@@ -494,6 +497,7 @@ body {
     left: 50%;
     color: white;
     transform: translate(-50%,-50%);
+    white-space: nowrap;
 }
 
 .sp_contact {
@@ -828,17 +832,22 @@ z-index: 100;
 
 .exhibition_box {
     background-color: #f3e6d8;
-    width: 350px;
-    height: 350px;
     border-radius: 8px;
     text-align: center;
-    
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.works_exhibition > div {
+    max-width: 350px;
+    width: 100%;
 }
 
 .works_mock_size {
-    width: 135px;
-    padding: 35px;
-   
+    max-height: 270px;
+    height: 80%;
 }
 
 .works_img_tittle {
@@ -1194,6 +1203,9 @@ z-index: 100;
 
 .sp_works_more {
     padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
 }
 
 .tab_works_more_wrap {
@@ -1258,10 +1270,12 @@ z-index: 100;
     margin: 0 auto;
 }
 
-
-
 .sp_footer {
     display: block;
+}
+
+.return {
+    margin-top: 200px;
 }
 
 /* thanksページ */
@@ -1403,6 +1417,7 @@ z-index: 100;
     height: 50px;
     border: 1px dashed #c33f4e;
     border-radius: 15px;
+    margin-bottom: 10px;
 }
 
 .hobby_btn_tittle {
@@ -1432,10 +1447,11 @@ z-index: 100;
 
   .hobby_btn_wrap {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
     gap: 5%;
     margin: 0 8% 15%;
-
   }
 
   .hobby_wrap {
@@ -1450,11 +1466,11 @@ z-index: 100;
   .tab_about_name {
     font-size: 24px;
     display: flex;
- 
+    align-items: flex-end;
   }
 
   .about_name_size {
-    padding: 5px 0 0 10px;
+    padding:  0 0 5px 10px;
   }
 
   .sp_hooter {
@@ -1700,6 +1716,14 @@ z-index: 100;
         margin: 0 17% 150px;
         text-align: end;
       }
+
+      .sp_about_btn_02 > a {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: fit-content;
+        margin-left: auto;
+      }
 }
 
 
@@ -1839,6 +1863,19 @@ z-index: 100;
 .tab_about_name {
     font-size: 18px;
 }
+
+.btn_position {
+    width: 100px;
+}
+
+.btn_position {
+    padding-top: 60px;
+}
+
+.top_btn_padding {
+    padding-right: 68px;
+}
+
 }
 
 
@@ -1874,6 +1911,10 @@ z-index: 100;
 
     .tab_about_name {
         font-size: 16px;
+    }
+
+    .sp_contact_thread {
+        padding-top: 70px;
     }
 }
 
