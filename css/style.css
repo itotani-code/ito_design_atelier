@@ -213,7 +213,7 @@ body {
 
   .about_wrap {
     display: flex;
-    margin: 225px 0 0 0;
+    margin: 100px 0 0 0;
     position: relative;
 }
 
@@ -309,9 +309,10 @@ body {
   .support_h3{
     font-size: 30px;
     font-weight: normal;
-    margin: 350px 0 120px 0;
+    margin: 220px 0 120px 0;
     text-align: center;
   }
+
   .support_h3_color {
     color: #c33f4e;
   }
@@ -414,7 +415,7 @@ body {
 }
 
 .works_more_padding {
-    padding-right: 5px;
+    padding-left: 55px;
 }
 
 .ida_works_more_btn {
@@ -733,6 +734,23 @@ z-index: 100;
 .tab_aboutme_title_02 {
     display: none;
 }
+
+.sp_introduction {
+    line-height: 1;
+}
+
+.tab_about_text_02 > p {
+    padding-bottom: 5px;
+}
+
+.tab_about_name {
+    line-height: 1;
+}
+
+.about_name_size {
+    padding-left: 10px;
+}
+
 
 /* ここからロゴページ */
 
@@ -1128,10 +1146,6 @@ z-index: 100;
     display: none;
    }
 
-   .tab_support {
-    display: block;
-   }
-
    .sp_support {
     display: none;
    }
@@ -1202,7 +1216,7 @@ z-index: 100;
 }
 
 .sp_works_more {
-    padding-right: 10px;
+    padding-right: 5px;
     display: flex;
     flex-direction: column;
     align-items: end;
@@ -1215,6 +1229,10 @@ z-index: 100;
 
 .sp_ida_works_more_btn {
     width: 144px;
+}
+
+.works_more_padding {
+    padding-right: 10px;
 }
 
 .contact {
@@ -1552,7 +1570,7 @@ z-index: 100;
 
     .commitment {
         font-size: 16px;
-        margin: 75% 0 0;
+        margin: 80% 0 0;
     }
 }
 
@@ -1582,12 +1600,13 @@ z-index: 100;
     .about_thread_adjustment {
         display: block;
         width: 100%;
-        margin: 25% 0 5% ;
+        margin: 40% 0 5% ;
     }
 
     .about_thread {
         display: none; 
     }
+
 
 
 }
