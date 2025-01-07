@@ -84,6 +84,25 @@ body {
     to { transform: rotateZ(360deg); }
   }
 
+  .loading_padding {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    /* 背景色の設定 */
+    background-color: #f3e6d9;
+    z-index: 800;
+    top: 550px;
+    left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .loading_padding {
+    padding-top: 100px;
+  }
+  
+
 
 
 
@@ -267,8 +286,10 @@ body {
         font-size: 25px;
         text-align: center;
     }
-
   }
+
+  
+
 
   @media screen and (max-width: 480px) {
     
@@ -340,6 +361,49 @@ body {
       transform: translateY(-20px);
     }
   }
+
+/* svgアニメーション */
+/* .svg_container {
+    z-index: 500;
+}
+.svg_block {
+  padding: 10%;
+}
+
+#text {
+  mask: url(#mask);
+}
+
+.handwriting {
+  width: 100%;
+  height: auto;
+  
+  &_text {
+    fill: #404040;
+  }
+  
+  &_mask {
+    &_line {
+      fill: none;
+      stroke: #fff;
+      stroke-width: 7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-dasharray: 4000px;
+      animation: handwriting 4s linear infinite;
+    }
+  }
+}
+
+@keyframes handwriting {
+  0% {
+    stroke-dashoffset: 4000px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+} */
+/* svgアニメーションここまで */
   
 
   /* 部分的に色を変える */
@@ -696,6 +760,7 @@ body {
     color: white;
     transform: translate(-50%,-50%);
     white-space: nowrap;
+    font-size: 16px;
 }
 
 .sp_contact {
@@ -706,6 +771,18 @@ body {
     width: 100%;
     height: 70px;
     background-color: #c33f4e;
+}
+.hooter_wrap {
+    position: relative;
+}
+
+.hooter_thanks {
+    width: 100%;
+    height: 70px;
+    background-color: #c33f4e;
+    position: absolute;
+    top: 140px;
+    left: 0;
 }
 
 .hooter_text {
@@ -760,9 +837,11 @@ body {
 
 .thanks_img {
     width: 176px;
+    /* height: 100vh; */
     position: absolute;
     top: 0;
     left: 250px;
+    
 }
 
 .tab_thanks {
