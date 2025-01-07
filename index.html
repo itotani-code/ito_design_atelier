@@ -19,6 +19,10 @@
 </head>
 <body>
     
+  <!-- ローディング -->
+  <!-- <div class="loading">
+    <img src="./images/ida_loding.png" alt="">
+    </div> -->
 
         
          
@@ -36,6 +40,7 @@
 
 
 
+          <div class="nav_outer">
          <nav class="pc_nav">
             <ul>
                <li><a href="./logo.html">ロゴに込めた思い</a></li>
@@ -57,11 +62,9 @@
              <li><a href="#contact_guide">お問い合わせ</a></li>
           </ul>  
       </nav>
+        </div>
         
-
-
-
-       </div>
+     </div>
 
        <!-- キャッチコピー -->
        <div class="header">
@@ -102,6 +105,11 @@
       </p>
   </section>
 
+
+
+
+
+
     <!-- ロゴのページへ -->
     <section class="logo">
         <a href="./logo.html">
@@ -136,7 +144,7 @@
       </a>
         </div>
 
-        <img  class="about_img" src="./images/ida_about.png" alt="">
+        <img  class="about_img" src="./images/about_01_retouch.png" alt="">
     </div>
     
     </section>
@@ -169,7 +177,7 @@
           </div>
 
           <div class="ida_sp_about">
-            <img src="./images/ida_about.png" alt="">
+            <img src="./images/about_01_retouch.png" alt="">
           </div>
 
         </div>
@@ -256,7 +264,7 @@
 
 
             <div class="ida_sp_about">
-              <img src="./images/ida_about.png" alt="">
+              <img src="./images/about_01_retouch.png" alt="">
             </div>
 
           </div>
@@ -670,29 +678,32 @@
             </div>
         </div>
     
+ <form action="" method="post">
     <div class="contact_wrap">
         <p class="conrtact_name">お名前</p>
-        <div class="contact_box"></div>
+        <input class="contact_box" type="text" name="name" placeholder="">
     </div>
 
     <div class="contact_wrap">
         <p class="conrtact_name">メールアドレス</p>
-        <div class="contact_box"></div>
+        <input class="contact_box" type="text" name="email" placeholder="">
     </div>
 
     <div class="contact_wrap_last">
         <p class="conrtact_name">お問い合わせ内容</p>
-        <div class="contact_box_text"></div>
+        <textarea class="contact_box_text" name="inquiry" placeholder=""></textarea>
     </div>
 
     <div class="contact_btn_wrap">
-        <div class="lower_contact_btn">
+        <button class="lower_contact_btn">
             <img src="./images/ida_contact_btn.svg" alt="">
             <p class="contact_btn_text">
             送信する</p>
+            </button>
     </div>   
 
-    </div>
+    
+    </form>
 </section>
 
 <!-- タブ -->
@@ -736,10 +747,6 @@
 
 <section class="sp_contact">
 
-   <!-- <div class="sp_contact_thread">
-       <img class="sp_contact_threads" src="./images/ida_sp_contact_thread.svg" alt="">
-   </div> -->
-
    <div class="sp_contact_text">
     <p>
       ここまでご覧いただきありがとうございます。<br>
@@ -748,6 +755,7 @@
     </p>
    </div>
 
+   
    <div class="contact_form">
     <p class="sp_conrtact_name">お名前</p>
     <div class="sp_contact_box"></div>
@@ -770,8 +778,7 @@
         送信する</p>
 </div>   
 
-</div>
-</section>
+
 
 
 
@@ -784,7 +791,7 @@
       <p class="return">
           <a href="#" class="arrow-left"></a>
       戻る
-      <img class="btn_position" src="./images/ida_top_btn.png.svg" alt="">
+      <img class="btn_position" src="./images/ida_top_btn.svg" alt="">
       <p class="top_btn_padding">TOP</p>
       </p>
   
@@ -793,8 +800,8 @@
       
   
   
-      <div class="hooter">
-          <p class="hooter_text">©︎ 2024 itodesign atelier.</p>
+      <div id="hooter">
+          <p class="hooter_text">©︎ 2024 ito design atelier.</p>
       </div>
       </section>
 
@@ -817,5 +824,32 @@
           })
         }) 
       </script>
+
+<script>
+$(function () {
+  function end_loading() {
+    // ページ読み込み完了後フェードアウトする時間
+    $('.loading').fadeOut(2000);
+  }
+  $(window).on('load', function () {
+    // ページ読み込み完了時にend_loading()を実行
+    if ($('body').attr('data-loaded') === 'true') {
+      end_loading();
+    } else {
+      $(window).on('pageshow', function () {
+        end_loading();
+      });
+    }
+  });
+
+  // ページ読み込み完了時にdata属性を追加
+  $(document).ready(function () {
+    $('body').attr('data-loaded', 'true');
+  });
+});
+</script>
+
+</div>
+</section>
 </body>
 </html>
