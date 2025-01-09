@@ -16,6 +16,10 @@
         })(document);
       </script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/gh/alfrcr/paginathing/dist/paginathing.min.js"
+      ></script>
 </head>
 <body>
 
@@ -57,25 +61,25 @@
     </div>
 
     <div class="menu_wrap">
-        <div class="border_deco">
-            <p class="works_menu">All</p>
+        <div class="border_deco works_menu active" data-group="">
+            All
         </div>
 
-        <div class="border_deco">
-            <p class="works_menu">Web</p>
+        <div class="border_deco works_menu" data-group="web">
+            Web
         </div>
 
-        <div class="border_deco">
-            <p class="works_menu">Graphic</p>
+        <div class="border_deco works_menu" data-group="graphic">
+            Graphic
         </div>
 
-        <div class="border_deco">
-            <p class="works_menu">Other</p>
+        <div class="border_deco works_menu" data-group="other">
+            Other
         </div>
     </div>
 
 <div class="works_exhibition">
-    <div>
+    <div data-group="graphic">
         <a href="./works-under-spring.html">
         <div class="exhibition_box">
             <img class="works_mock_size" src="./images/sp_mock_spring.png" alt="">
@@ -84,17 +88,15 @@
         <p class="works_img_tittle">キャンペーン告知用バナー(架空)</p>
     </div>
 <!-- / -->
-    <div>
+    <div data-group="graphic">
         <a href="./works-under-trip.html"><div class="exhibition_box">
             <img class="works_mock_size" src="./images/sp_mock_trip.png" alt="">
         </div>
         </a>
         <p class="works_img_tittle">アプリ広告用バナー(架空)</p>
     </div>
-</div>
 
-<div class="works_exhibition">
-    <div>
+    <div data-group="graphic">
         <a href="./works-under-hbg01.html">
         <div class="exhibition_box">
             <img class="works_mock_size" src="./images/sp_mock_hbg_01.png" alt="">
@@ -103,7 +105,7 @@
         <p class="works_img_tittle">キャンペーン告知用バナー A(架空)</p>
     </div>
 
-    <div>
+    <div data-group="graphic">
         <a href="./works-under-hbg02.html">
         <div class="exhibition_box">
             <img class="works_mock_size" src="./images/sp_mock_hbg_02.png" alt="">
@@ -111,10 +113,8 @@
         </a>
         <p class="works_img_tittle">キャンペーン告知用バナー B(架空)</p>
     </div>
-</div>
 
-<div class="works_exhibition">
-    <div>
+    <div data-group="web">
         <a href="./works-unde-LP.html">
         <div class="exhibition_box">
             <img class="works_mock_size_LP" src="./images/PC_mock_cafe_LP.png" alt="">
@@ -123,15 +123,70 @@
         <p class="works_img_tittle">カフェコーポレートサイト(架空)</p>
     </div>
 
-    <div>
+    <div data-group="web">
         <div class="exhibition_box">
             <img class="works_mock_size_LP" src="./images/PC_mock_beauty_LP.png" alt="">
         </div>
         <p class="works_img_tittle">美容室コーポレートサイト(架空)</p>
     </div>
+
+    <div data-group="graphic">
+        <a href="./works-under-spring.html">
+        <div class="exhibition_box">
+            <img class="works_mock_size" src="./images/sp_mock_itologo.png" alt="">
+        </div>
+        </a>
+        <p class="works_img_tittle">ito design ateier.ロゴデザイン</p>
+    </div>
+<!-- / -->
+    <div data-group="graphic">
+        <a href="./works-under-trip.html"><div class="exhibition_box">
+            <img class="works_mock_size" src="./images/sp_mock_akitacoffee_logo.png" alt="">
+        </div>
+        </a>
+        <p class="works_img_tittle">秋田珈琲 様 ロゴデザイン</p>
+    </div>
+
+    <div data-group="graphic">
+        <a href="./works-under-hbg01.html">
+        <div class="exhibition_box">
+            <img class="works_mock_size" src="./images/sp_mock_haikei_logo.png" alt="">
+        </div>
+        </a>
+        <p class="works_img_tittle">拝啓、灰と成って 様 ロゴデザイン</p>
+    </div>
+
+    <div data-group="graphic">
+        <a href="./works-under-hbg02.html">
+        <div class="exhibition_box">
+            <img class="works_mock_size" src="./images/sp_mock_hbg_02.png" alt="">
+        </div>
+        </a>
+        <p class="works_img_tittle">キャンペーン告知用バナー B(架空)</p>
+    </div>
+
+    <div data-group="web">
+        <a href="./works-unde-LP.html">
+        <div class="exhibition_box">
+            <img class="works_mock_size_LP" src="./images/PC_mock_cafe_LP.png" alt="">
+        </div>
+        </a>
+        <p class="works_img_tittle">カフェコーポレートサイト(架空)</p>
+    </div>
+
+    <div data-group="web">
+        <div class="exhibition_box">
+            <img class="works_mock_size_LP" src="./images/PC_mock_beauty_LP.png" alt="">
+        </div>
+        <p class="works_img_tittle">美容室コーポレートサイト(架空)</p>
+    </div>
+
+    <div data-group="other">
+        <p class="works_tittle"><span class="contact_color">C</span>oming Soon...</p>
+    </div>
 </div>
 
-<div class="page_scroll">
+<!-- <div class="page_scroll">
     <div>
         <img class="arrow" src="./images/arrow_back.svg" alt="">
     </div>
@@ -159,7 +214,7 @@
     </div>
 </a>
 
-</div>
+</div> -->
 
 <section class="lower_contact">
 
@@ -220,6 +275,57 @@
         $('.sp_btn').toggleClass('open');
         $('.sp_nav').fadeToggle();
       })
+
+      $(function() {
+        $('.sp_btn').on('click',function() {
+            $('.sp_btn').toggleClass('open');
+            $('.sp_nav').fadeToggle();
+        })
+
+        // ページネーション
+        function initializePagination() {
+            $('.pagination').remove(); // 初期化
+            $('.works_exhibition').paginathing({
+                perPage: 6, // 1ページに表示する作品数
+                activeClass: 'current_page', // 現在のページ数にクラス追加
+                prevText: '<img class="arrow" src="./images/arrow_next.svg" alt="">',
+                nextText: '<img class="arrow" src="./images/arrow_next.svg" alt="">',
+            });
+        }
+
+        let allItems = $('.works_exhibition > div');
+
+        // ページネーションの初期化
+        initializePagination();
+
+        // 絞り込み機能
+        $('.works_menu').on('click', function () {
+            // 初期化
+            $('.works_menu').removeClass('active');
+
+            // 選択したグループにactiveクラスを追加
+            // 選択したグループのdata-group属性の値を取得
+            let group = $(this).addClass('active').data('group');
+            
+            let filteredItems;
+
+            if (group === '') {
+                // allが選択された時は全て表示
+                filteredItems = allItems;
+            } else {
+                // 選択したグループのアイテムを取得
+                filteredItems = allItems.filter(function () {
+                    return $(this).data('group') === group;
+                });
+            }
+
+            // 絞り込んだアイテムを表示
+            $('.works_exhibition').empty().append(filteredItems);
+
+            // 絞り込み後にページネーションを再初期化
+            initializePagination();
+        });
+    }) 
     }) 
   </script>
 </body>

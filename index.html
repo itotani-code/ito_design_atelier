@@ -23,12 +23,11 @@
   <div class="loading">
     
     <img src="./images/ida_loding_02.png" alt="">
-    </div>
-
     <div class="loading_padding">
       <img src="./images/ida_loding_01.png" alt="">
       <p>Loading...</p>
     </div>
+  </div>
 
         
          
@@ -846,7 +845,7 @@
 
 
 
-
+<!-- ハンバーガーメニュー -->
       <script>
         $(function() {
           $('.sp_btn').on('click',function() {
@@ -855,32 +854,32 @@
           })
         }) 
       </script>
+<!-- ハンバーガーメニュー -->
 
 <script>
-$(function () {
-  function end_loading() {
-    // ページ読み込み完了後フェードアウトする時間
-    $('.loading').fadeOut(2000);
-  }
-  $(window).on('load', function () {
-    // ページ読み込み完了時にend_loading()を実行
-    if ($('body').attr('data-loaded') === 'true') {
-      end_loading();
-    } else {
-      $(window).on('pageshow', function () {
-        end_loading();
-      });
+  $(function () {
+    function end_loading() {
+      // ページ読み込み完了後フェードアウトする時間
+      $('.loading').delay(1000).fadeOut(2000);
     }
+    // ページ読み込み完了時にdata属性を追加
+    $(document).ready(function () {
+      $('body').attr('data-loaded', 'true');
+    
+      // ページ読み込み完了時にend_loading()を実行
+      if ($('body').attr('data-loaded') === 'true') {
+        end_loading();
+      } else {
+        $(window).on('pageshow', function () {
+          end_loading();
+        });
+      }
+    });
+  
   });
+  </script>
 
-  // ページ読み込み完了時にdata属性を追加
-  $(document).ready(function () {
-    $('body').attr('data-loaded', 'true');
-  });
-});
-</script>
-
-<script>
+<!-- <script>
   $(function () {
     function end_loading() {
       // ページ読み込み完了後フェードアウトする時間
@@ -902,7 +901,7 @@ $(function () {
       $('body').attr('data-loaded', 'true');
     });
   });
-  </script>
+  </script> -->
 
 <script type="text/javascript">
   let submitted = false;
