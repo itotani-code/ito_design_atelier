@@ -130,8 +130,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    position: relative;
+    position: fixed;
     z-index: 200;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #c33f4e;
+    padding-bottom: 100px;
 }
 
 
@@ -180,7 +185,7 @@ body {
     color: #888888;
   } */
 
-  li:last-child {
+  .pc_nav li:last-child {
     padding: 0 70px 0 0;
   }
 
@@ -190,8 +195,9 @@ body {
 
 
   .header {
-    position: relative;
+    /* position: relative; */
     /* height: 100vh; */
+
   }
 
   /* キャッチコピー */
@@ -201,7 +207,7 @@ body {
     /* margin: 270px 0 0 375px; */
     font-weight: normal;
     position: absolute;
-    top:  230px ;
+    top:  330px ;
     left: 330px;
   }
 
@@ -1104,6 +1110,10 @@ body {
 
 /* ここからworksページ */
 
+.works_under {
+    margin-top: 120px; 
+}
+
 .works_tittle {
     padding-top: 150px;
     font-size: 30px;
@@ -1267,8 +1277,8 @@ body {
 
 .worls_under_wrap {
     display: flex;
-    justify-content: center;
-    gap: 170px;
+    justify-content: space-around;
+    /* gap: 170px; */
     margin: 0 8% 0;
 }
 
@@ -1865,17 +1875,20 @@ body {
 
 .mock_frame {
     width: 70%;
-    height: 500px;
+    aspect-ratio: 1;
     margin: 0 auto;
     background-color: #f3e6d9;
     border-radius: 8px;
     text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .sp_mock_custom {
 
     width: 35%;
-    padding-top: 60px;
+    /* padding-top: 60px; */
 }
 
 .sp_works_name {
@@ -2037,6 +2050,10 @@ body {
     .sp_mock_width {
         width: 28%;
     } */
+
+    .detail {
+        gap: 60px;
+    }
 }
 
 @media screen and (max-width: 735px) {
@@ -2117,9 +2134,6 @@ body {
         padding-top: 30%;
 }
 
-.sp_mock_custom {
-    width: 40%;
-}
 
 }
 
@@ -2139,9 +2153,6 @@ body {
         padding: 80% 10% 0;
     }
 
-    .sp_mock_custom {
-        width: 50%;
-    } 
 }
 
 @media screen and (max-width: 550px) {
@@ -2279,9 +2290,7 @@ body {
     gap: 40px;
 }
 
-.sp_mock_custom {
-    width: 60%;
-} 
+
 
 .sp_works_name {
     font-size: 20px;
@@ -2333,9 +2342,6 @@ body {
         animation: fluffy 4s infinite;
     }
 
-    .sp_mock_custom {
-        width: 70%;
-    }  
 }
 
 
