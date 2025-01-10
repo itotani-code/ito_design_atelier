@@ -212,10 +212,10 @@ body {
   @media screen and (max-width: 930px) {
 
     .catchcopy {
-        font-size: 35px;
+        font-size: 33px;
         left: auto;
-        top: 150px;
-        right: 20%;
+        top: 280px;
+        right: 25%;
     } 
   }
 
@@ -2337,8 +2337,8 @@ body {
 
 @media screen and (max-width: 430px) {
     .tab_catchcopy {
-        font-size: 25px;
-        padding-top: 5%;
+        font-size: 27px;
+        padding-top: 8%;
     }
 }
 
