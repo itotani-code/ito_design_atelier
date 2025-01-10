@@ -135,8 +135,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: #c33f4e;
-    padding-bottom: 100px;
+    padding-bottom: 30px;
 }
 
 
@@ -147,8 +146,7 @@ body {
     width: 90%;
     position: absolute;
     top: 0;
-    left: 0;
-    
+    left: -10px;
   }
 
   
@@ -326,10 +324,6 @@ body {
         right: 30px;
     } */
   }
-
-
-
-
 /* ハンバーガーここまで */
 
 
@@ -377,46 +371,72 @@ body {
   }
 
 /* svgアニメーション */
-/* .svg_container {
-    z-index: 500;
-}
-.svg_block {
-  padding: 10%;
-}
-
 #text {
-  mask: url(#mask);
-}
-
-.handwriting {
-  width: 100%;
-  height: auto;
-  
-  &_text {
-    fill: #404040;
+    mask: url(#mask);
   }
   
-  &_mask {
-    &_line {
+  .handwriting {
+    width: 100%;
+    height: auto;
+  }
+  .handwriting_text {
+    fill: #C33F4E;
+  }
+  
+  .handwriting_mask_line {
       fill: none;
       stroke: #fff;
-      stroke-width: 7;
       stroke-linecap: round;
       stroke-linejoin: round;
-      stroke-dasharray: 4000px;
-      animation: handwriting 4s linear infinite;
+      stroke-width: 20px;
+      stroke-dasharray: 6000px;
+      animation: handwriting 4s linear;
+      animation-delay: 3s;
+  }
+  
+  @keyframes handwriting {
+    0% {
+      stroke-dashoffset: 6000px;
+    }
+    100% {
+      stroke-dashoffset: 0;
     }
   }
-}
 
-@keyframes handwriting {
-  0% {
-    stroke-dashoffset: 4000px;
+  /* sp */
+
+  #text_sp {
+    mask: url(#mask);
   }
-  100% {
-    stroke-dashoffset: 0;
+  
+  .handwriting_sp {
+    width: 100%;
+    height: auto;
   }
-} */
+  .handwriting_text {
+    fill: #C33F4E;
+  }
+  
+  .handwriting_mask_line {
+      fill: none;
+      stroke: #fff;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 20px;
+      stroke-dasharray: 6000px;
+      animation: handwriting 4s linear;
+      animation-delay: 3s;
+  }
+  
+  @keyframes handwriting {
+    0% {
+      stroke-dashoffset: 6000px;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
+    
 /* svgアニメーションここまで */
   
 
@@ -749,7 +769,7 @@ body {
     position: absolute;
     top: 10;
     right: 0;
-    animation: fluffy 4s infinite;
+    /* animation: fluffy 4s infinite; */
 }
 
 .conrtact_name {
@@ -818,8 +838,13 @@ body {
     display: none;
 }
 
+/* .btn_fixed {
 
+} */
 
+.button {
+    padding: 0;
+}
 
 
 
@@ -968,10 +993,12 @@ body {
     position: relative;
     border: none;
     outline: none;
+    padding: 0;
 }
 
 .contact_btn_wrap {
     text-align: center;
+    margin-bottom: 200px;
 }
 
 .sp_footer {
@@ -1021,9 +1048,14 @@ body {
 }
 
 .top_btn_padding {
-    padding: 30px 110px 0 8px;
+    padding: 25px 110px 0 8px;
     text-align: end;
 } 
+
+.top_btn_pdg {
+    padding: 50px 110px 0 8px;
+    text-align: end;
+}
 
 .top_btn_thanks_page {
     padding: 50px 110px 0 8px;
@@ -1339,7 +1371,8 @@ body {
         writing-mode: vertical-rl;
         text-align: left;
         font-size: 40px;
-        padding: 100px 0 0 375px;
+        padding: 200px 0 0 375px;
+        margin-top: 100px;
 
     }
 
@@ -1382,8 +1415,8 @@ body {
         width: 75%;
         position: absolute;
         top: 0%;
-        right: 0%;
-        animation: fluffy 4s infinite;
+        right: -30px;
+
     }
     
     .commitment {
@@ -2300,6 +2333,13 @@ body {
     margin-top: 30px;
 }
 
+}
+
+@media screen and (max-width: 430px) {
+    .tab_catchcopy {
+        font-size: 25px;
+        padding-top: 5%;
+    }
 }
 
 
