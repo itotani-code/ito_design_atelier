@@ -149,6 +149,9 @@ body {
     left: -10px;
   }
 
+  .tab_commitment_img {
+    display: none;
+  }
   
 
 
@@ -205,7 +208,7 @@ body {
     /* margin: 270px 0 0 375px; */
     font-weight: normal;
     position: absolute;
-    top:  330px ;
+    top:  340px ;
     left: 330px;
   }
 
@@ -261,6 +264,11 @@ body {
         position: absolute;
         bottom: 10px;
         transition: 0.4s;
+    }
+
+    .sp_btn img {
+        width: 44px;
+        height: 2px;
     }
 
     /* ばつじるし */
@@ -342,7 +350,7 @@ body {
     font-size: 18px;
     text-align: center;
     line-height: 1.6;
-    margin: 65% 0 0;
+    margin: 75% 0 0;
   }
 
   .sp_commitment_img {
@@ -1370,7 +1378,7 @@ body {
         /* max-width: 375px; */
         writing-mode: vertical-rl;
         text-align: left;
-        font-size: 40px;
+        font-size: 45px;
         padding: 200px 0 0 375px;
         margin-top: 100px;
 
@@ -1416,7 +1424,6 @@ body {
         position: absolute;
         top: 0%;
         right: -30px;
-
     }
     
     .commitment {
@@ -1425,6 +1432,7 @@ body {
         font-size: 16px;
         text-align: start;
         padding-left: 30px;
+        padding-top: 0px;
     }
 
     .commitment_color {
@@ -1968,6 +1976,7 @@ body {
     .commitment {
         font-size: 16px;
         margin: 80% 0 0;
+        padding-top: 100px;
     }
 }
 
@@ -2139,7 +2148,7 @@ body {
       }
 
       .sp_about_btn_02 {
-        margin: 0 17% 150px;
+        margin: 0 17% 50px;
         text-align: end;
         animation: fluffy 4s infinite;
       }
@@ -2184,6 +2193,10 @@ body {
 
     .tab_commitment {
         padding: 80% 10% 0;
+    }
+
+    .sp_about_btn_02 {
+        margin-bottom: 0px;
     }
 
 }
@@ -2290,7 +2303,7 @@ body {
 }
 
 .sp_about_btn_02 {
-    margin: 0 8% 150px;
+    margin: 0 8% 50px;
 }
 
 .sp_about_introduction {
@@ -2339,6 +2352,10 @@ body {
     .tab_catchcopy {
         font-size: 27px;
         padding-top: 8%;
+    }
+
+    .sp_about_btn_02 {
+        margin-bottom:  0px;
     }
 }
 
@@ -2448,16 +2465,23 @@ body {
        }
 }
 
+@media screen and (max-width: 360px) {
 
+    .tab_catchcopy {
+        font-size: 23px;
+        padding-top: 8%;
+    }
+
+}
 @media screen and (max-width: 350px) {
 
    .works_exhibition {
     width:  90%;
 }
 
-
-
 }
+
+
 
 
 
