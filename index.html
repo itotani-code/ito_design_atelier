@@ -56,8 +56,8 @@
         </nav>
 
         <div class="sp_btn">
-          <span></span>
-          <img src="/images/hgb_menu.svg" alt="">
+          <img class="hbg_01" src="./images/line.svg" alt="">
+          <img class="hbg_02" src="./images/line.svg" alt="">
         </div>
 
         <nav class="sp_nav">
@@ -887,6 +887,12 @@
             $('.sp_btn').toggleClass('open');
             $('.sp_nav').fadeToggle();
           })
+          // メニュー内リンクをクリックすると閉じる
+          $('.sp_nav a').on('click',function() {
+            $('.sp_btn').removeClass('open');
+            $('.sp_nav').fadeOut();
+          })
+
         }) 
       </script>
 <!-- ハンバーガーメニュー -->

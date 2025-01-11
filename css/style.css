@@ -242,42 +242,38 @@ body {
         z-index: 100;
     }
 
-    .sp_btn span {
+    .hbg_01 {
         display: block;
         width: 45px;
         height: 2px;
-        background: #4e3f36;
-        border-radius: 2px;
         /* 位置の調整 */
         position: relative;
-        top: 10px;
+        padding-bottom: 10px;
         transition: 0.5s;
     }
 
-    .sp_btn span::before {
+    .hbg_02{
         content: "";
         display: block;
         width: 45px;
         height: 2px;
-        background: #4e3f36;
-        border-radius: 2px;
         position: absolute;
-        bottom: 10px;
         transition: 0.4s;
     }
 
-    .sp_btn img {
+    /* .sp_btn img {
         width: 44px;
         height: 2px;
-    }
+    } */
 
     /* ばつじるし */
-    .sp_btn.open span::before {
-        bottom: 0;
-        transform: rotate(90deg);
+    .sp_btn.open .hbg_01  {
+        padding-bottom: 0;
+        transform: rotate(45deg);
     }
 
-    .sp_btn.open span {
+    .sp_btn.open .hbg_02 {
+        top: 0;
         transform: rotate(-45deg);
     }
 
@@ -398,6 +394,7 @@ body {
       stroke-linejoin: round;
       stroke-width: 20px;
       stroke-dasharray: 6000px;
+      stroke-dashoffset: 6000px;
       animation: handwriting 4s linear;
       animation-delay: 3s;
   }
