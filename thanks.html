@@ -30,14 +30,28 @@
 
         
 
-     <nav class="pc_nav">
-        <ul>
-           <li><a href="#logo_mind">ロゴに込めた思い</a></li>
-           <li><a href="#about">わたしのこと</a></li>
-           <li><a href="#works">これまでの作品</a></li>
-           <li><a href="#access">お問い合わせ</a></li>
-        </ul>
-    </nav>
+          <nav class="pc_nav">
+            <ul>
+               <li><a href="./logo.html">ロゴに込めた思い</a></li>
+               <li><a href="./about.html">わたしのこと</a></li>
+               <li><a href="./works.html">これまでの作品</a></li>
+               <li><a href="#contact_guide">お問い合わせ</a></li>
+            </ul>  
+        </nav>
+
+        <div class="sp_btn">
+          <img class="hbg_01" src="./images/line.svg" alt="">
+          <img class="hbg_02" src="./images/line.svg" alt="">
+        </div>
+
+        <nav class="sp_nav">
+          <ul>
+             <li><a href="./logo.html">ロゴに込めた思い</a></li>
+             <li><a href="./about.html">わたしのこと</a></li>
+             <li><a href="./works.html">これまでの作品</a></li>
+             <li><a href="#contact_guide">お問い合わせ</a></li>
+          </ul>  
+      </nav>
    </div>
 </header>
 
@@ -126,6 +140,12 @@
                 $('.sp_btn').toggleClass('open');
                 $('.sp_nav').fadeToggle();
               })
+
+                 // メニュー内リンクをクリックすると閉じる
+          $('.sp_nav a').on('click',function() {
+            $('.sp_btn').removeClass('open');
+            $('.sp_nav').fadeOut();
+          })
             }) 
           </script>
 </body>

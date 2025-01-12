@@ -396,6 +396,7 @@ body {
       stroke-dasharray: 6000px;
       stroke-dashoffset: 6000px;
       animation: handwriting 4s linear;
+      /* animation: handwriting 4s forwards; */
       animation-delay: 3s;
   }
   
