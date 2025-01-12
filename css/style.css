@@ -362,7 +362,7 @@ body {
   }
 
   .logo {
-    animation: fluffy 4s infinite;
+    /* animation: fluffy 4s infinite; */
   }
 
   @keyframes fluffy {
@@ -395,7 +395,7 @@ body {
       stroke-width: 20px;
       stroke-dasharray: 6000px;
       stroke-dashoffset: 6000px;
-      animation: handwriting 4s linear;
+      animation: handwriting 4s linear forwards;
       /* animation: handwriting 4s forwards; */
       animation-delay: 3s;
   }
@@ -423,7 +423,7 @@ body {
     fill: #C33F4E;
   }
   
-  .handwriting_mask_line {
+  /* .handwriting_mask_line {
       fill: none;
       stroke: #fff;
       stroke-linecap: round;
@@ -441,7 +441,7 @@ body {
     100% {
       stroke-dashoffset: 0;
     }
-  }
+  } */
     
 /* svgアニメーションここまで */
   
@@ -505,7 +505,7 @@ body {
   position: absolute;
   top: -80px;
   right: 0;
-  animation: fluffy 4s infinite;
+  /* animation: fluffy 4s infinite; */
 }
 
   .sp_about_thread {
@@ -542,7 +542,7 @@ body {
     align-items: center;
     padding: 65px 0 0 165px;
     gap: 5px;
-    animation: fluffy 4s infinite;
+    /* animation: fluffy 4s infinite; */
   }
 
 
@@ -673,7 +673,7 @@ body {
     position: absolute;
     top: 0px;
     left: 0px;
-    animation: fluffy 4s infinite;
+    /* animation: fluffy 4s infinite; */
 }
 
 .pc_mock_01 {
@@ -699,7 +699,7 @@ body {
     padding: 70px 0 5px 320px;
     position: relative;
     z-index: 200;
-    animation: fluffy 4s infinite;
+    /* animation: fluffy 4s infinite; */
 }
 
 .works_more_padding {
@@ -902,13 +902,14 @@ body {
 }
 
 .aboutme_contents {
-    margin-top: 100px;
+    /* margin-top: 100px; */
 }
 
 .aboutme_title {
     text-align: center;
     /* padding-bottom: 90px; */
     position: relative;
+    padding-top: 240px;
 }
 
 .ida_aboutme_thread {
@@ -984,6 +985,8 @@ body {
     position: absolute;
     top: -200px;
     left: 0;
+
+    
 }
 
 .lower_contact_text {
@@ -1100,7 +1103,7 @@ body {
 .logo_tittle {
     text-align: center;
     font-size: 30px;
-    margin-top: 245px;
+    margin-top: 240px;
     margin-left: 4.5%;
 }
 
@@ -1153,7 +1156,7 @@ body {
 }
 
 .works_tittle {
-    padding-top: 150px;
+    padding-top: 240px;
     font-size: 30px;
     text-align: center;
 }
@@ -1199,8 +1202,11 @@ body {
     .works_exhibition {
         gap: 0px;
     }
-    
 }
+
+/* .handwriting_sp {
+    overflow: hidden;
+} */
 
 .exhibition_box {
     background-color: #f3e6d8;
@@ -1422,6 +1428,7 @@ body {
         position: absolute;
         top: 0%;
         right: -30px;
+        overflow: hidden;
     }
     
     .commitment {
@@ -1624,7 +1631,7 @@ body {
 .tab_works_more_wrap {
     text-align: right;
     padding-right: 19%;
-    animation: fluffy 4s infinite;
+    /* animation: fluffy 4s infinite; */
 }
 
 .sp_ida_works_more_btn {
@@ -1640,7 +1647,7 @@ body {
 }
 
 .tab_contact_form {
-    
+
     max-width: 315px;
     margin: 0 auto;
 }
@@ -1672,6 +1679,18 @@ body {
     margin: 0 auto;
     background-color: antiquewhite;
     border-radius: 6px;
+    border:  none;
+    outline: none;
+}
+
+.sp_contact_box_text {
+    width: 315px;
+    height: 200px;
+    margin: 0 auto;
+    background-color: antiquewhite;
+    border-radius: 6px;
+    border:  none;
+    outline: none;
 }
 
 .sp_contact_box_last {
@@ -2005,7 +2024,7 @@ body {
         display: block;
         width: 100%;
         margin: 40% 0 5% ;
-        animation: fluffy 4s infinite;
+        /* animation: fluffy 4s infinite; */
     }
 
     .about_thread {
@@ -2027,7 +2046,7 @@ body {
         max-width: 1025px;
         width: 100%;
         padding: 140px 0 30px 0;
-        animation: fluffy 4s infinite;
+        /* animation: fluffy 4s infinite; */
     }
 
     .contact_text {
@@ -2051,7 +2070,7 @@ body {
         max-width: 980px;
         width: 100%;
         padding: 180px 0 30px 0;
-        animation: fluffy 4s infinite;
+        /* animation: fluffy 4s infinite; */
     }
 
     .commitment {
@@ -2148,7 +2167,7 @@ body {
       .sp_about_btn_02 {
         margin: 0 17% 50px;
         text-align: end;
-        animation: fluffy 4s infinite;
+        /* animation: fluffy 4s infinite; */
       }
 
       .sp_about_btn_02 > a {
@@ -2394,7 +2413,7 @@ body {
 
     .sp_contact_thread {
         padding-top: 70px;
-        animation: fluffy 4s infinite;
+        /* animation: fluffy 4s infinite; */
     }
 
 }

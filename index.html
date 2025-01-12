@@ -113,7 +113,7 @@
 </svg>
 </div>
 
-
+<div class="tab_commitment_img_wrap">
 <div class="tab_commitment_img">
 <svg id="handwriting_sp" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 319 676">
 
@@ -135,6 +135,7 @@
   </mask>
 </svg>
 
+</div>
 </div>
 
 
@@ -779,28 +780,37 @@
    </p>
   </div>
 
+  <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeOCwP8DJ_Djl3rlrX-BHK1hgcoJhd_tQ0a4jRg_qpVOzg1AQ/formResponse" 
+  method="post"  target="hidden_iframe"
+  onsubmit="submitted=true;">
   <div class="tab_contact_form">
    <p class="tab_conrtact_name">お名前</p>
-   <div class="sp_contact_box"></div>
+   <!-- <div class="sp_contact_box"></div> -->
+   <input class="sp_contact_box" type="text" name="entry.449493284" placeholder="    山田 太郎"  required="required">
 </div>
 
 <div class="tab_contact_form">
    <p class="tab_conrtact_name">メールアドレス</p>
-   <div class="sp_contact_box"></div>
+   <!-- <div class="sp_contact_box"></div> -->
+   <input class="sp_contact_box" type="email" name="entry.1152240914" placeholder="    test@example.com" required="required">
 </div>
 
 <div class="tab_contact_form_last">
    <p class="tab_conrtact_name">お問い合わせ内容</p>
-   <div class="sp_contact_box_last"></div>
+   <!-- <div class="sp_contact_box_last"></div> -->
+   <textarea class="sp_contact_box_text" name="entry.1484791372" placeholder="" required="required"></textarea>
 </div>
 
 <div class="sp_contact_btn_wrap">
    <div class="lower_contact_btn">
+    <button class="lower_contact_btn" type="submit">
        <img src="./images/ida_contact_btn.svg" alt="">
        <p class="contact_btn_text">
        送信する</p>
+      </button>
 </div>   
 </div>
+</form>
 </section>
 
 
@@ -815,30 +825,67 @@
     </p>
    </div>
 
-   
+   <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeOCwP8DJ_Djl3rlrX-BHK1hgcoJhd_tQ0a4jRg_qpVOzg1AQ/formResponse" 
+method="post"  target="hidden_iframe"
+onsubmit="submitted=true;">
    <div class="contact_form">
     <p class="sp_conrtact_name">お名前</p>
-    <div class="sp_contact_box"></div>
+    <!-- <div class="sp_contact_box"></div> -->
+    <input class="sp_contact_box" type="text" name="entry.449493284" placeholder="    山田 太郎"  required="required">
 </div>
 
 <div class="contact_form">
     <p class="sp_conrtact_name">メールアドレス</p>
-    <div class="sp_contact_box"></div>
+    <!-- <div class="sp_contact_box"></div> -->
+    <input class="sp_contact_box" type="email" name="entry.1152240914" placeholder="    test@example.com" required="required">
 </div>
 
 <div class="contact_form_last">
     <p class="sp_conrtact_name">お問い合わせ内容</p>
-    <div class="sp_contact_box_last"></div>
+    <!-- <div class="sp_contact_box_last"></div> -->
+    <textarea class="sp_contact_box_text" name="entry.1484791372" placeholder="" required="required"></textarea>
 </div>
 
 <div class="sp_contact_btn_wrap">
     <div class="lower_contact_btn">
+      <button class="lower_contact_btn" type="submit">
         <img src="./images/ida_contact_btn.svg" alt="">
         <p class="contact_btn_text">
         送信する</p>
+      </button>
 </div> 
 </div>
+</form>
 </section>
+
+<!-- <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeOCwP8DJ_Djl3rlrX-BHK1hgcoJhd_tQ0a4jRg_qpVOzg1AQ/formResponse" 
+method="post"  target="hidden_iframe"
+onsubmit="submitted=true;">
+<div class="contact_wrap">
+<p class="conrtact_name">お名前</p>
+<input class="contact_box" type="text" name="entry.449493284" placeholder="    山田 太郎"  required="required">
+</div>
+
+<div class="contact_wrap">
+<p class="conrtact_name">メールアドレス</p>
+<input class="contact_box" type="email" name="entry.1152240914" placeholder="    test@example.com" required="required">
+</div>
+
+<div class="contact_wrap_last">
+<p class="conrtact_name">お問い合わせ内容</p>
+<textarea class="contact_box_text" name="entry.1484791372" placeholder="" required="required"></textarea>
+</div>
+
+<div class="contact_btn_wrap">
+<button class="lower_contact_btn" type="submit">
+<img src="./images/ida_contact_btn.svg" alt="">
+<p class="contact_btn_text">
+送信する</p>
+</button>
+</div>   
+
+
+</form> -->
 
 
 
@@ -854,9 +901,9 @@
    
 
         <div class="btn_fixed">
-      <img class="btn_position" src="./images/ida_top_btn.svg" alt="">
+      <a href="#top"><img class="btn_position" src="./images/ida_top_btn.svg" alt="">
       <p class="top_btn_pdg">TOP
-      </p>
+      </p></a>
     </div>
 
   </p>
