@@ -1476,6 +1476,11 @@ body {
     display: none;
    }
 
+   .logo > a {
+    margin-left: auto;
+    margin-right: 8%;
+   }
+
 
 
 
@@ -2245,6 +2250,13 @@ body {
         margin-top: 30px;
     }
 
+    .tab_works_more_wrap {
+        padding-right: 8%;
+    }
+
+    .sp_works_more {
+        padding-right: 0px;
+    }
 }
 
 @media screen and (max-width: 510px) {
@@ -2353,8 +2365,6 @@ body {
     gap: 40px;
 }
 
-
-
 .sp_works_name {
     font-size: 20px;
 }
@@ -2363,6 +2373,9 @@ body {
     margin-top: 30px;
 }
 
+.top_btn_pdg {
+    padding-right: 68px;
+}
 }
 
 @media screen and (max-width: 430px) {
@@ -2389,9 +2402,8 @@ body {
         width: 120px;
     }
 
-    .tab_commitment {
-        padding: 71% 10% 0;
-    }
+  
+    
     
 
     .logo > a {
