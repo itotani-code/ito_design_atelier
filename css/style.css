@@ -17,6 +17,7 @@ ul,
 li {
   margin: 0;
   padding: 0;
+  line-height: 1.8;
   
   /*デフォルトの文字色、font-familyを予め当てておく*/
   color: #4e3f36;
@@ -31,6 +32,10 @@ a {
   text-decoration: none;
   /*色を消す*/
   color: inherit;
+}
+
+button {
+    background-color: transparent;
 }
 
 
@@ -51,10 +56,9 @@ body {
     margin: 0 auto;
     background-color: #fcf8e7;
      background-image: url(../images/PF_texture_03.jpg); 
-     background-size: 100%;
+     background-size: 100% 100%;
      background-blend-mode: multiply;
-    /* width: 1366px;
-    height: 1000px;  */
+    background-repeat: no-repeat;
 }
 
 /* ここまでリセットcss */
@@ -156,8 +160,25 @@ body {
   }
   
 
+  #tab_contact  {
+    display: none;
+  }
 
+.sp_contact_btn_wrap {
+    display: none;
+}
 
+.tab_contact_form {
+    display: none;
+}
+
+.tab_contact_form_last {
+    display: none;
+}
+
+.tab_contact_text p {
+    display: none;
+}
 
 
 
@@ -255,7 +276,6 @@ body {
     }
 
     .hbg_02{
-        content: "";
         display: block;
         width: 45px;
         height: 2px;
@@ -367,7 +387,7 @@ body {
     font-size: 18px;
     text-align: center;
     line-height: 1.6;
-    margin: 75% 0 0;
+    margin: 70% 0 0;
   }
 
   .sp_commitment_img {
@@ -433,14 +453,20 @@ body {
   /* sp */
 
   #text_sp {
-    mask: url(#mask);
+    mask: url(#mask_sp);
   }
   
   .handwriting_sp {
     width: 100%;
     height: auto;
   }
-  .handwriting_text {
+  #handwriting_sp > .handwriting_mask_line {
+  animation: handwriting 20s linear forwards;
+  }
+
+
+
+  /* .handwriting_text {
     fill: #C33F4E;
   }
   
@@ -451,7 +477,7 @@ body {
       stroke-linejoin: round;
       stroke-width: 20px;
       stroke-dasharray: 6000px;
-      animation: handwriting 4s linear;
+      animation: handwriting 4s linear forwards;
       animation-delay: 3s;
   }
 
@@ -464,7 +490,7 @@ body {
     100% {
       stroke-dashoffset: 0;
     }
-  }
+  } */
     
 /* svgアニメーションここまで */
   
@@ -519,7 +545,7 @@ body {
 
   .about_wrap {
     display: flex;
-    margin: 150px 0 0 0;
+    margin: 220px 0 0 0;
     position: relative;
 }
 
@@ -705,7 +731,7 @@ body {
     /* margin: 0 auto; */
     /* padding: 430px 0 0 490px; */
     margin-left: auto;
-    padding: 290px 21% 0 0;
+    padding: 350px 21% 0 0;
 }
 
 .mock_animation {
@@ -769,7 +795,6 @@ body {
     border: none;
     outline: none;
 }
-
 .contact_box_text {
     background-color: #f3e6d8;
     margin-top: 10px;
@@ -878,7 +903,9 @@ body {
     padding: 0;
 }
 
-
+.sp_br_400px {
+    display: none;
+} 
 
 
 
@@ -1031,6 +1058,10 @@ body {
     padding: 0;
 }
 
+/* .lower_contact_btn {
+    display: none;
+} */
+
 .contact_btn_wrap {
     text-align: center;
     margin-bottom: 200px;
@@ -1121,6 +1152,9 @@ body {
     padding-left: 10px;
 }
 
+.contact_br_400px {
+    display: none;
+}
 
 
 
@@ -1330,6 +1364,10 @@ body {
     margin: 80px 0 30px 0;
 }
 
+.hobby_acodion {
+display: none;
+}
+
 .works_detail_text {
     width: 410px;
     padding-bottom: 150px;
@@ -1446,6 +1484,10 @@ body {
         padding: 25% 0 0 22%;
         font-size: 38px;
     }
+
+    .sp_contact_btn_wrap {
+        display: block;
+    }
     
 
     .tab_commitment_img {
@@ -1508,9 +1550,20 @@ body {
    }
 
 
+   .tab_contact {
+    display: block;
+   }
 
 
 
+   .contact_box {
+    width: 315px;
+   }
+
+
+   .tab_support {
+    display: block;
+   }
 
    .tab_about_wrap {
     display: block;
@@ -1596,6 +1649,7 @@ body {
    .tab_support_h3 {
     font-size: 25px;
     text-align: center;
+    padding-top: 60px;
    }
 
    .sp_tool_name {
@@ -1678,13 +1732,18 @@ body {
     display: none;
 }
 
-.tab_contact_form {
-
+.sp_contact_form {
     max-width: 315px;
     margin: 0 auto;
 }
 
-.tab_contact_form_last {
+.contact_form {
+    max-width: 315px;
+    margin: 0 auto;
+   
+}
+
+.contact_form_last {
     max-width: 315px;
     margin: 0 auto;
 }
@@ -1693,6 +1752,15 @@ body {
     display: block;
 }
 
+.sp_contact {
+    display: block;
+}
+
+.sp_contact_text {
+    text-align: center;
+    padding-bottom: 80px;
+    margin: 0 8% 0;
+}
 
 
 .tab_contact_text {
@@ -1701,7 +1769,7 @@ body {
     margin: 0 8% 0;
 }
 
-.tab_conrtact_name {
+.sp_conrtact_name {
     padding:15px 0 0 0px;
 }
 
@@ -1709,7 +1777,7 @@ body {
     width: 315px;
     height: 40px;
     margin: 0 auto;
-    background-color: antiquewhite;
+    background-color: #f3e6d8;
     border-radius: 6px;
     border:  none;
     outline: none;
@@ -1719,7 +1787,7 @@ body {
     width: 315px;
     height: 200px;
     margin: 0 auto;
-    background-color: antiquewhite;
+    background-color: #f3e6d8;
     border-radius: 6px;
     border:  none;
     outline: none;
@@ -1729,7 +1797,7 @@ body {
     width: 315px;
     height: 200px;
     margin: 0 auto;
-    background-color: antiquewhite;
+    background-color: #f3e6d8;
     border-radius: 6px;
 }
 
@@ -2428,6 +2496,10 @@ body {
     padding-bottom: 100px;
 }
 
+.sp_support_h3 {
+    padding-top: 100px;
+}
+
 .sp_about_btn_02 {
     margin: 0 8% 50px;
 }
@@ -2499,7 +2571,15 @@ body {
         width: 120px;
     }
 
+    .contact_br_400px {
+        display: block;
+    }
+
+    .sp_br_400px {
+        display: block;
+    }
   
+    
     
     
 
