@@ -2605,6 +2605,9 @@ display: none;
         /* animation: fluffy 4s infinite; */
     }
 
+    .contact_space {
+        white-space: nowrap;
+    }
 }
 
 
