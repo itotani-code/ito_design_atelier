@@ -217,13 +217,6 @@ body {
     display: none;
   }
 
-
-  .header {
-    /* position: relative; */
-    /* height: 100vh; */
-
-  }
-
   /* キャッチコピー */
   .catchcopy {
     font-size: 40px;
@@ -365,14 +358,24 @@ body {
     transition-delay: .5s; /* フェード開始を0.5秒遅らせる */
   }
 
+  /**パーテーション フェードイン(初期値) */
+.partition {
+    opacity: 0; /* 最初は非表示 */
+
+
+  }
+  /* フェードイン(スクロールした後) */
+  .partition.writing {
+    opacity: 1; /* 表示領域に入ったら表示 */
+
+  }
+
+  
+
 
   .scroll_img_size {
       width: 300px;
   }
-
-
-
-
 
 
   
@@ -402,9 +405,7 @@ body {
     display: none;
   }
 
-  .logo {
-    /* animation: fluffy 4s infinite; */
-  }
+
 
   @keyframes fluffy {
     0%, 100% {
@@ -460,45 +461,48 @@ body {
     width: 100%;
     height: auto;
   }
-  #handwriting_sp > .handwriting_mask_line {
-  animation: handwriting 20s linear forwards;
-  }
-
-
-
-  /* .handwriting_text {
+  .handwriting_text_sp {
     fill: #C33F4E;
   }
   
-  .handwriting_mask_line {
+  .handwriting_mask_line_sp {
       fill: none;
       stroke: #fff;
       stroke-linecap: round;
       stroke-linejoin: round;
-      stroke-width: 20px;
+      stroke-width: 7px;
       stroke-dasharray: 6000px;
-      animation: handwriting 4s linear forwards;
-      animation-delay: 3s;
+      stroke-dashoffset: 6000px;
+      animation: handwriting 9s linear forwards;
+      /* animation: handwriting 4s forwards; */
+      animation-delay: 4s;
   }
-
-
   
-  @keyframes handwriting {
+  @keyframes handwriting_sp {
     0% {
       stroke-dashoffset: 6000px;
     }
     100% {
       stroke-dashoffset: 0;
     }
-  } */
-    
+  }
+
+
+
+
+
+  /* about */
+
+
+
+
 /* svgアニメーションここまで */
   
 
   /* 部分的に色を変える */
   .commitment_color {
     font-size: 22px;
-    color:#c33f4e
+    color:#c33f4e;
   }
 
   /* ロゴのページへ */
@@ -1057,10 +1061,6 @@ body {
     outline: none;
     padding: 0;
 }
-
-/* .lower_contact_btn {
-    display: none;
-} */
 
 .contact_btn_wrap {
     text-align: center;

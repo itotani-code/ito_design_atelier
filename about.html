@@ -16,6 +16,7 @@
         })(document);
       </script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+      <script src="JS/jquery.inview.min.js"></script>
 </head>
 
 <body>
@@ -55,7 +56,7 @@
    </div>
 </header>
 
-<main class="maincontents">
+<main class="maincontents js-fadeUp">
 
     <div class="aboutme_contents">
 
@@ -89,7 +90,7 @@
 </div>
 </main>
 
-<main class="tab_maincontents">
+<main class="tab_maincontents js-fadeUp">
 
   <div class="aboutme_contents">
 
@@ -130,18 +131,18 @@
 
 
  
-    <div class="aboutme_title_02">
+    <div class="aboutme_title_02 js-fadeUp">
         <p class="contact_main"><span class="contact_color">好</span>きなもの</p>
     </div>
 
-    <div class="tab_aboutme_title_02">
+    <div class="tab_aboutme_title_02 js-fadeUp">
       <p class="contact_main"><span class="contact_color">好</span>きなもの</p>
   </div>
 
     
 
 
-    <div class="tab_hobby_wrap">
+    <div class="tab_hobby_wrap js-fadeUp">
 
     <div class="about_hobby">
         <p class="hobby_tittle">音楽</p>
@@ -164,7 +165,7 @@
   </div>
   
   
-  <div class="tab_about_me_02">
+  <div class="tab_about_me_02 js-fadeUp">
       <img src="./images/ida_about_me_02.png" alt="">
   </div>
 
@@ -186,7 +187,7 @@
   </div> -->
 
   <details>
-    <summary class="hobby_acodion">
+    <summary class="hobby_acodion js-fadeUp">
       音楽
       <span class="dli-chevron-down"></span>
     </summary>
@@ -199,7 +200,7 @@
   </details>
 
   <details>
-    <summary class="hobby_acodion">
+    <summary class="hobby_acodion js-fadeUp">
       料理
       <span class="dli-chevron-down"></span>
     </summary>
@@ -213,7 +214,7 @@
 
 
 
-  <div class="hobby_wrap">
+  <div class="hobby_wrap js-fadeUp">
     <div class="about_hobby">
         <p class="hobby_tittle">音楽</p>
         <p class="hobby_text_01">15歳の頃から音楽を初めて以来、演奏も鑑賞もずっと好きです。<br>
@@ -232,7 +233,7 @@
         </p>
     </div>   
 
-    <div class="about_me_02">
+    <div class="about_me_02 js-fadeUp">
       <img src="./images/ida_about_me_02.png" alt="">
     </div>
 
@@ -242,7 +243,7 @@
 
 
 
-    <section class="support">
+    <section class="support js-fadeUp">
 
         <h3 class="about_support"><p><span class="support_h3_color">お</span>手伝いできること</p></h3>
     
@@ -333,11 +334,11 @@
     </div>
     </section>
 
-    <section class="lower_contact">
+    <section class="lower_contact js-fadeUp">
 
         <div class="lower_contact_tittle">
             <p class="lower_contact_main"><span class="contact_color">お</span>問い合わせ</p>
-            <div class="partition">
+            <div class="partition writing">
                 <!-- <img src="./images/ida_partition.svg" alt=""> -->
 
 <svg id="handwriting" data-name="レイヤー 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 300">
@@ -354,7 +355,7 @@
             </div>
         </div>
 
-        <p class="lower_contact_text">ここまでご覧いただきありがとうございます。<br>
+        <p class="lower_contact_text"><span class="contact_space">ここまでご覧いただきありがとうございます。</span><br>
             何かございましたら、些細なことでも<br class="br_550px">お気軽にご相談ください。
         </p>
 
@@ -401,6 +402,24 @@
             $('.sp_nav').fadeOut();
           })
   }) 
+</script>
+
+<script>
+  // スクロールして表示領域に入ったらclass付与
+$(function () {
+$(".partition").on("inview", function () {
+$(this).addClass("writing");
+});
+});
+</script>
+
+<script>
+  // スクロールして表示領域に入ったらclass付与
+$(function () {
+$(".js-fadeUp").on("inview", function () {
+$(this).addClass("is-inview");
+});
+});
 </script>
 
 
