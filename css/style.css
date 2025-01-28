@@ -38,6 +38,9 @@ button {
     background-color: transparent;
 }
 
+summary::-webkit-details-marker {
+    display: none;
+  }
 
 
 ul {
@@ -111,15 +114,6 @@ body {
   .loading_padding img {
     width: 200px;
   }
-
-  .loading_padding {
-    /* padding-top: 100px; */
-  }
-  
-
-
-
-
 
 
 .tab_header {
@@ -195,8 +189,7 @@ body {
     padding: 0 0 25px 0;
   }
 
-  
-
+ 
 
 .pc_nav ul {
     display: flex;
@@ -205,9 +198,6 @@ body {
     gap: 50px;
   }
 
-  /* .pc_nav ul > li:hover {
-    color: #888888;
-  } */
 
   .pc_nav li:last-child {
     padding: 0 70px 0 0;
@@ -227,6 +217,7 @@ body {
     top:  340px ;
     left: 330px;
   }
+
 
   @media screen and (max-width: 930px) {
 
@@ -345,7 +336,7 @@ body {
   }
 /* ハンバーガーここまで */
 
-/* フェードイン(初期値) */
+/* フェードアップ(初期値) */
 .js-fadeUp {
     opacity: 0; /* 最初は非表示 */
     transform: translateY(30px); /* 下に30pxの位置から */
@@ -357,6 +348,50 @@ body {
     transform: translateY(0); /* 30px上に移動する */
     transition-delay: .5s; /* フェード開始を0.5秒遅らせる */
   }
+  /* フェードアップ(初期値) */
+
+  /* フェードアップ100px */
+  .js-fadeUp100px {
+    opacity: 0; /* 最初は非表示 */
+    transform: translateY(100px); /* 下に100pxの位置から */
+    transition: opacity .8s, transform .8s; /* 透過率と縦方向の移動を0.8秒 */
+  }
+  /* フェードイン(スクロールした後) */
+  .js-fadeUp100px.is-inview {
+    opacity: 1; /* 表示領域に入ったら表示 */
+    transform: translateY(0); /* 100px上に移動する */
+    transition-delay: .5s; /* フェード開始を0.5秒遅らせる */
+  }
+   /* フェードアップ100px */
+
+
+
+  /* フェードイン 右から */
+  .js-fadeRight {
+    opacity: 0; /* 最初は非表示 */
+    transform: translateX(30px); /* 右に30pxの位置から */
+    transition: opacity .8s, transform .8s; /* 透過率と縦方向の移動を0.8秒 */
+  }
+  /* フェードイン(スクロールした後) */
+  .js-fadeRight.is-inview {
+    opacity: 1; /* 表示領域に入ったら表示 */
+    transform: translateX(0); /* 30px左に移動する */
+    transition-delay: .5s; /* フェード開始を0.5秒遅らせる */
+  }
+
+    /* フェードイン 左から */
+    .js-fadeLeft {
+        opacity: 0; /* 最初は非表示 */
+        transform: translateX(-30px); /* 左に30pxの位置から */
+        transition: opacity .8s, transform .8s; /* 透過率と縦方向の移動を0.8秒 */
+      }
+      /* フェードイン(スクロールした後) */
+      .js-fadeLeft.is-inview {
+        opacity: 1; /* 表示領域に入ったら表示 */
+        transform: translateX(0); /* 30px右に移動する */
+        transition-delay: .5s; /* フェード開始を0.5秒遅らせる */
+      }
+  
 
   /**パーテーション フェードイン(初期値) */
 .partition {
@@ -487,11 +522,82 @@ body {
     }
   }
 
+  /* // */
 
-
-
-
+   #text_about {
+    mask: url(#mask_about);
+  }
+  
+  #handwriting_about {
+    width: 100%;
+    height: auto;
+    transition: none;
+  }
+  .handwriting_text_about {
+    fill: #C33F4E;
+  }
+  
+  .handwriting_mask_line_about {
+      fill: none;
+      stroke: #fff;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 10px;
+      stroke-dasharray: 6000px;
+      stroke-dashoffset: 6000px;
+      animation: handwriting 7s linear forwards;
+      animation-delay: 4s;
+  }
+  
+  @keyframes handwriting_about {
+    0% {
+      stroke-dashoffset: 6000px;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  }
   /* about */
+
+  /* works */
+
+  /* #text_works {
+    mask: url(#mask_works);
+  }
+  
+  .handwriting_works {
+    width: 100%;
+    height: auto;
+  }
+  .handwriting_text_works {
+    fill: #C33F4E;
+  }
+  
+  .handwriting_mask_line_works {
+      fill: none;
+      stroke: #fff;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      stroke-width: 10px;
+      stroke-dasharray: 8000px;
+      stroke-dashoffset: 8000px;
+      animation: handwriting 5s linear forwards;
+    
+      animation-delay: 4s;
+  }
+  
+  @keyframes handwriting_works {
+    0% {
+      stroke-dashoffset: 8000px;
+    }
+    100% {
+      stroke-dashoffset: 0;
+    }
+  } */
+
+
+
+
 
 
 
@@ -533,6 +639,7 @@ body {
   .logo_text {
     padding-right: 20px;
   }
+  
 
   .about {
     font-size: 16px;
@@ -558,8 +665,15 @@ body {
   position: absolute;
   top: -80px;
   right: 0;
-  /* animation: fluffy 4s infinite; */
+  opacity: 0;
+  transition: opacity 0.5s ease;
 }
+
+
+.about_thread.is-inview {
+  opacity: 1;
+}
+
 
   .sp_about_thread {
     display: none;
@@ -1981,6 +2095,7 @@ display: none;
     box-sizing: border-box;
     transform: translateY(-25%) rotate(135deg);
   }
+
 
   .hobby_btn_wrap {
     display: flex;
