@@ -26,10 +26,6 @@ li {
   font-style: normal;
 }
 
-* {
-    outline: 1px solid magenta;
-}
-
 a {
   /*下線を消す*/
   text-decoration: none;
@@ -1881,7 +1877,7 @@ display: none;
 
 .sp_works_mock {
     max-width: 767px;
-    width: 90%;
+    width: 75%;
 }
 
 
